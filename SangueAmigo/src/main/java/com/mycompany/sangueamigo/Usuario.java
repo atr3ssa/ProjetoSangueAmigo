@@ -10,13 +10,14 @@ public class Usuario {
       private String tipoSanguineo;
       private String senha_usuario;
 
+      //Conferir
     public Usuario(int codigo, String nome, String senha) {
         this.codigo = codigo;
-        this.nome_usuario = nome_usuario;
+        this.nome_usuario = nome;
         this.endereco = endereco;
         this.datadeNascimento = datadeNascimento;
         this.tipoSanguineo = tipoSanguineo;
-        this.senha_usuario = senha_usuario;
+        this.senha_usuario = senha;
     }
     public Usuario (){
         this.codigo = 0;
@@ -28,17 +29,10 @@ public class Usuario {
     }
     public Usuario (String login, String senha){
         this.codigo = 0;
-        this.nome = login;
-        this.periodo = "";
-        this.senha = senha;
-    }
-    public String getSenha() {
-        return senha;
+        this.nome_usuario = login;
+        this.senha_usuario = senha;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
     public int getCodigo() {
         return codigo;
     }
@@ -47,24 +41,44 @@ public class Usuario {
         this.codigo = codigo;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNome_usuario() {
+        return nome_usuario;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome_usuario(String nome_usuario) {
+        this.nome_usuario = nome_usuario;
     }
 
-    public String getPeriodo() {
-        return periodo;
+    public String getDatadeNascimento() {
+        return datadeNascimento;
     }
 
-    public void setPeriodo(String periodo) {
-        this.periodo = periodo;
+    public void setDatadeNascimento(String datadeNascimento) {
+        this.datadeNascimento = datadeNascimento;
     }
 
-     
+    public String getEndereco() {
+        return endereco;
+    }
 
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getTipoSanguineo() {
+        return tipoSanguineo;
+    }
+
+    public void setTipoSanguineo(String tipoSanguineo) {
+        this.tipoSanguineo = tipoSanguineo;
+    }
+
+    public String getSenha_usuario() {
+        return senha_usuario;
+    }
+
+    public void setSenha_usuario(String senha_usuario) {
+        this.senha_usuario = senha_usuario;
+    }
+    
 }
-
-
