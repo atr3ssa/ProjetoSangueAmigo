@@ -20,8 +20,8 @@ public class usuarioDAO {
       
       //Com auto increment
 
-      String sql =   "INSERT INTO usuario (nome,senha) VALUES ('"
-       +usuario.getNome() + "','"
+      String sql =   "INSERT INTO usuario (nome,datadeNascimento, endereco, tipoSanguineo, senha) VALUES ('"
+       + usuario.getNome() + "','"
        + usuario.getSenha() + "')";
       
        System.out.println(sql);
