@@ -1,12 +1,14 @@
-
 package com.mycompany.sangueamigo;
 
-import com.mycompany.sangueamigo.ConexaoDB;
-import com.mycompany.sangueamigo.Usuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
+
+
 
 
 public class usuarioDAO {
@@ -16,13 +18,12 @@ public class usuarioDAO {
        + usuario.getCodigo() + ",'"
        + usuario.getNome() + "','"
        + usuario.getSenha() + "','M')"; */
-      
-      
       //Com auto increment
 
-      String sql =   "INSERT INTO usuario (nome,datadeNascimento, endereco, tipoSanguineo, senha) VALUES ('"
-       + usuario.getNome() + "','"
-       + usuario.getSenha() + "')";
+      public void insert(Usuario usuario) {
+      String sql =   "INSERT INTO usuario (nome_usuario, datadeNascimento, endereco, tipoSanguineo, senha_usuario) VALUES ('"
+       + usuario.getNome_usuario() + "','"
+       + usuario.getSenha_usuario() + "')";
       
        System.out.println(sql);
        try {
@@ -41,8 +42,8 @@ public class usuarioDAO {
     
     //Alterar um usuario
     public void update(Usuario usuario) {
-       String sql =   "UPDATE  usuario SET nome=\"" +usuario.getNome()+ "\",senha=\""
-       + usuario.getSenha() + "\" WHERE id=" + usuario.getCodigo();
+       String sql =   "UPDATE  usuario SET nome=\"" +usuario.getNome_usuario()+ "\",senha=\""
+       + usuario.getSenha_usuario() + "\" WHERE id=" + usuario.getCodigo();
        System.out.println(sql);
        try {
         Connection c = ConexaoDB.obtemConexao();
@@ -82,8 +83,8 @@ public class usuarioDAO {
                 ResultSet rs = ps.executeQuery();
 
                while (rs.next()){
-                   usuario.setNome(rs.getString("nome"));     
-                   usuario.setSenha(rs.getString("senha"));     
+                   usuario.setNome_usuario(rs.getString("nome"));     
+                   usuario.setSenha_usuario(rs.getString("senha"));     
                }
            }   
            catch (Exception e){
@@ -104,9 +105,9 @@ public class usuarioDAO {
             {   Usuario usuario = new Usuario();
             
                 usuario.setCodigo(Integer.parseInt(rs.getString("id")));
-                usuario.setNome(rs.getString("nome"));
+                usuario.setNome_usuario(rs.getString("nome"));
                 usuario.setCodigo(rs.getInt("id"));
-                System.out.println(usuario.getNome());
+                System.out.println(usuario.getNome_usuario());
                 
                 dados.add(usuario);
             }
@@ -114,6 +115,6 @@ public class usuarioDAO {
             JOptionPane.showMessageDialog(null, e);
         }
         return dados;
-       }
+     }}
   
 
