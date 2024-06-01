@@ -19,6 +19,7 @@ public class usuarioDAO {
        + usuario.getSenha_usuario() + "')";
       
        System.out.println(sql);
+       // try catch = Tratamento de erros
        try {
         Connection conectar = ConexaoDB.obtemConexao();
         PreparedStatement ps = conectar.prepareStatement(sql);
@@ -56,6 +57,7 @@ public class usuarioDAO {
     public void delete(int usuario) {
        String sql =   "DELETE FROM usuario WHERE id=" + usuario;
        System.out.println(sql);
+       // try catch = Tratamento de erros
        try {
         Connection conectar = ConexaoDB.obtemConexao();
         PreparedStatement ps = conectar.prepareStatement(sql);
@@ -91,7 +93,8 @@ public class usuarioDAO {
      public ArrayList listaUsuario(){
         ArrayList<Usuario> dados = new ArrayList();
         String sql = "SELECT * FROM usuario";
-
+        
+        // try catch = Tratamento de erros
         try { Connection conectar = ConexaoDB.obtemConexao();
               PreparedStatement ps = conectar.prepareStatement(sql);
 
