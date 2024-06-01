@@ -7,20 +7,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-
-
-
-
 public class usuarioDAO {
-  //Sem auto increment
-        
-       /*String sql =   "INSERT INTO usuario (codigo,nome,senha,periodo) VALUES ("
-       + usuario.getCodigo() + ",'"
-       + usuario.getNome() + "','"
-       + usuario.getSenha() + "','M')"; */
-      //Com auto increment
-
+    
+    //Método Insert para inclusão no usuario DAO
       public void insert(Usuario usuario) {
+    //Código para auto incremento
       String sql =   "INSERT INTO usuario (nome_usuario, datadeNascimento, endereco, tipoSanguineo, senha_usuario) VALUES ('"
        + usuario.getNome_usuario() + "','"
        + usuario.getSenha_usuario() + "')";
@@ -74,7 +65,7 @@ public class usuarioDAO {
              e.printStackTrace();
        }
     }
-    // Consultar um Usuario
+    // Método consulta para consultar um Usuario na Classe DAO
     public void consulta(Usuario usuario) {    
         String sql =   "SELECT * from usuario where id=" + usuario.getCodigo();
         System.out.println(sql);
@@ -91,6 +82,7 @@ public class usuarioDAO {
                e.printStackTrace();
            }      
      }
+    // Lista
      public ArrayList listaUsuario(){
         ArrayList<Usuario> dados = new ArrayList();
         String sql = "SELECT * FROM usuario";
