@@ -22,4 +22,45 @@ public class AgendarExames {
         this.hora_exame = "";
         this.opcaoExame = "";
     }
+
+    public int getCodigoExame() {
+        return codigoExame;
+    }
+
+    public void setCodigoExame(int codigoExame) {
+        this.codigoExame = codigoExame;
+    }
+
+    public String getLocal_exame() {
+        return local_exame;
+    }
+
+    public void setLocal_exame(String local_exame) {
+        this.local_exame = local_exame;
+    }
+
+    public String getData_exame() {
+        return data_exame;
+    }
+
+    public void setData_exame(String data_exame) {
+        this.data_exame = data_exame;
+    }
+
+    public String getHora_exame() {
+        return hora_exame;
+    }
+
+    public void setHora_exame(String hora_exame) {
+        this.hora_exame = hora_exame;
+    }
+
+    public String getOpcaoExame() {
+        return opcaoExame;
+    }
+
+    public void setOpcaoExame(String opcaoExame) {
+        this.opcaoExame = opcaoExame;
+    }
+      
 }
