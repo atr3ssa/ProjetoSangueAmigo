@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 
 //Integração do Banco com o Netbeans
 public class ConexaoDB {
-  private static String host = "localhost";
+    private static String host = "localhost";
     private static String porta = "3306";
     private static String db = "SangueAmigo";
     private static String usuario = "root";

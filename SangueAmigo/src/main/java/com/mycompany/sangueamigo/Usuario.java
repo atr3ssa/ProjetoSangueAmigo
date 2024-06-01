@@ -11,13 +11,13 @@ public class Usuario {
       private String senha_usuario;
 
       //Conferir
-    public Usuario(int codigo, String nome, String senha) {
+    public Usuario(int codigo, String nome_usuario, String endereco, String datadeNascimento, String tipoSanguineo, String senha_usuario) {
         this.codigo = codigo;
-        this.nome_usuario = nome;
+        this.nome_usuario = nome_usuario;
         this.endereco = endereco;
         this.datadeNascimento = datadeNascimento;
         this.tipoSanguineo = tipoSanguineo;
-        this.senha_usuario = senha;
+        this.senha_usuario = senha_usuario;
     }
     public Usuario (){
         this.codigo = 0;
