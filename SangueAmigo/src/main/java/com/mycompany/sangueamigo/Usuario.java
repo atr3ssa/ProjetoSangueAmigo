@@ -3,6 +3,7 @@ package com.mycompany.sangueamigo;
 
 
 public class Usuario {
+    // Encapsulamento de atributos
       private int codigo;
       private String nome_usuario;
       private String datadeNascimento;
@@ -32,7 +33,9 @@ public class Usuario {
         this.nome_usuario = login;
         this.senha_usuario = senha;
     }
-
+    
+    //GETTERS E SETTERS
+    
     public int getCodigo() {
         return codigo;
     }

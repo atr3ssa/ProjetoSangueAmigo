@@ -1,5 +1,6 @@
+// pacote
 package com.mycompany.sangueamigo;
-
+// Importações sql
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -7,6 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
+//Tudo que é manipulação de banco, coloco em uma classe a parte chamada: UsuarioDAO (o que passa as infos do Usuario para o banco)
 public class usuarioDAO {
     
     //Método Insert para inclusão no usuario DAO

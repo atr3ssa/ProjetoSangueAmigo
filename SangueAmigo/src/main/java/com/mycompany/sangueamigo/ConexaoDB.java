@@ -23,6 +23,7 @@ public class ConexaoDB {
         //Usado para tentar mapear o erro do código. Vai tentar executar a conexão com o banco de dados, caso não ocorra, ele vai te informar o erro (podemos detalhar futuramente as possibilidades de erros)
         //Passo muito importande, devido a conexão Cliente - Servidor.
         try{
+            //Connection = 
             Connection conectar = DriverManager.getConnection("jdbc:mysql://" + host + ":" + porta + "/" + db + "?useTimezone=true&serverTimezone=UTC", usuario,senha);
             System.out.println("Banco Conectado com Sucesso!!!!");
             return conectar;

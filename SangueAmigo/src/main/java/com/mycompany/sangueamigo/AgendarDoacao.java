@@ -3,6 +3,7 @@ package com.mycompany.sangueamigo;
 
 
 public class AgendarDoacao {
+    // Encapsulamento de atributos
       private int codigoDoacao;
       private String local_doacao;
       private String data_doacao;
@@ -24,6 +25,8 @@ public class AgendarDoacao {
         this.opcaoDoacao = "";
     }
 
+     // GETTERS E SETTERS 
+      
     public int getCodigoDoacao() {
         return codigoDoacao;
     }

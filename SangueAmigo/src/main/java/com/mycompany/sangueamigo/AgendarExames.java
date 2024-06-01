@@ -2,6 +2,7 @@ package com.mycompany.sangueamigo;
 
 
 public class AgendarExames {
+    // Encapsulamento de atributos
       private int codigoExame;
       private String local_exame;
       private String data_exame;
@@ -22,7 +23,8 @@ public class AgendarExames {
         this.hora_exame = "";
         this.opcaoExame = "";
     }
-
+      // GETTERS E SETTERS
+      
     public int getCodigoExame() {
         return codigoExame;
     }
