@@ -20,12 +20,12 @@ public class usuarioDAO {
       
        System.out.println(sql);
        try {
-        Connection c = ConexaoDB.obtemConexao();
-        PreparedStatement ps = c.prepareStatement(sql);
+        Connection conectar = ConexaoDB.obtemConexao();
+        PreparedStatement ps = conectar.prepareStatement(sql);
         ps.execute();
         JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso");	
         ps.close();
-        c.close();               
+        conectar.close();               
 
         } catch (SQLException e) {
         JOptionPane.showMessageDialog(null, "Erros na Transação");
@@ -38,13 +38,15 @@ public class usuarioDAO {
        String sql =   "UPDATE  usuario SET nome=\"" +usuario.getNome_usuario()+ "\",senha=\""
        + usuario.getSenha_usuario() + "\" WHERE id=" + usuario.getCodigo();
        System.out.println(sql);
+       
+       // try catch = Tratamento de erros
        try {
-        Connection c = ConexaoDB.obtemConexao();
-        PreparedStatement ps = c.prepareStatement(sql);
+        Connection conectar = ConexaoDB.obtemConexao();
+        PreparedStatement ps = conectar.prepareStatement(sql);
         ps.execute();
         JOptionPane.showMessageDialog(null, "Alteração realizada com sucesso");	
         ps.close();
-        c.close();               
+        conectar.close();               
 
         } catch (SQLException e) {
         e.printStackTrace();
@@ -55,12 +57,12 @@ public class usuarioDAO {
        String sql =   "DELETE FROM usuario WHERE id=" + usuario;
        System.out.println(sql);
        try {
-        Connection c = ConexaoDB.obtemConexao();
-        PreparedStatement ps = c.prepareStatement(sql);
+        Connection conectar = ConexaoDB.obtemConexao();
+        PreparedStatement ps = conectar.prepareStatement(sql);
         ps.execute();
         JOptionPane.showMessageDialog(null, "Exclusão realizada com sucesso");	
         ps.close();
-        c.close();               
+        conectar.close();               
 
         } catch (SQLException e) {
              JOptionPane.showMessageDialog(null, "Usuario não excluido");
@@ -71,8 +73,9 @@ public class usuarioDAO {
     public void consulta(Usuario usuario) {    
         String sql =   "SELECT * from usuario where id=" + usuario.getCodigo();
         System.out.println(sql);
-        try {  Connection c = ConexaoDB.obtemConexao();
-               PreparedStatement ps = c.prepareStatement(sql);
+        // try catch = Tratamento de erros
+        try {  Connection conectar = ConexaoDB.obtemConexao();
+               PreparedStatement ps = conectar.prepareStatement(sql);
                 ResultSet rs = ps.executeQuery();
 
                while (rs.next()){
@@ -89,8 +92,8 @@ public class usuarioDAO {
         ArrayList<Usuario> dados = new ArrayList();
         String sql = "SELECT * FROM usuario";
 
-        try { Connection c = ConexaoDB.obtemConexao();
-              PreparedStatement ps = c.prepareStatement(sql);
+        try { Connection conectar = ConexaoDB.obtemConexao();
+              PreparedStatement ps = conectar.prepareStatement(sql);
 
                 ResultSet rs = ps.executeQuery();
 
