@@ -57,7 +57,7 @@ public class ExamesUsuario extends javax.swing.JFrame {
         jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(51, 0, 0));
         jLabel4.setText("Exames");
 
         jTextField5.setBackground(new java.awt.Color(204, 0, 0));
