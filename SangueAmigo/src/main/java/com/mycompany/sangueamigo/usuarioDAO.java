@@ -1,6 +1,7 @@
 // pacote
 package com.mycompany.sangueamigo;
 // Importações sql
+import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,13 +11,15 @@ import javax.swing.JOptionPane;
 
 //Tudo que é manipulação de banco, coloco em uma classe a parte chamada: UsuarioDAO (o que passa as infos do Usuario para o banco)
 public class usuarioDAO {
+
+    static ActionListener nome_usuario;
     
     //Métodos
     
     //Método Insert para inclusão no usuario DAO
       public void insert(Usuario usuario) {
     //Código para auto incremento
-      String sql =   "INSERT INTO usuario (nome_usuario, datadeNascimento, endereco, tipoSanguineo, senha_usuario) VALUES ('"
+      String sql =   "INSERT INTO usuario (nome_usuario, datadeNascimento, endereco, tipoSanguineo, senha_usuario, email, cpf_usuario) VALUES ('"
        + usuario.getNome_usuario() + "','"
        + usuario.getSenha_usuario() + "')";
       

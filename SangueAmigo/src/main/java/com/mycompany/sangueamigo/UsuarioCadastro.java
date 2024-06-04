@@ -30,24 +30,27 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTree1 = new javax.swing.JTree();
         buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         JQuadroVermelho = new javax.swing.JPanel();
-        LblNome = new javax.swing.JLabel();
-        JblDataNascimento = new javax.swing.JLabel();
-        LblTituloCadastro = new javax.swing.JLabel();
-        JblEndereco = new javax.swing.JLabel();
-        JblTipoSangue = new javax.swing.JLabel();
-        JblSenha = new javax.swing.JLabel();
-        JblEmail = new javax.swing.JLabel();
-        JblCpf = new javax.swing.JLabel();
-        TxtNome = new javax.swing.JTextField();
-        TxtEmail = new javax.swing.JTextField();
-        TxtEndereco = new javax.swing.JTextField();
-        TxtSenha = new javax.swing.JTextField();
-        TxtCpf = new javax.swing.JTextField();
-        TxtTipoSangue = new javax.swing.JTextField();
-        TxtDataNascimento = new javax.swing.JTextField();
-        BtnCadastrar = new javax.swing.JButton();
-        BtnSemCadastro = new javax.swing.JButton();
+        jblNome = new javax.swing.JLabel();
+        jblDataNascimento = new javax.swing.JLabel();
+        jblTituloCadastro = new javax.swing.JLabel();
+        jblEndereco = new javax.swing.JLabel();
+        jblTipoSangue = new javax.swing.JLabel();
+        jblSenha = new javax.swing.JLabel();
+        jblEmail = new javax.swing.JLabel();
+        jblCpf = new javax.swing.JLabel();
+        txtNome = new javax.swing.JTextField();
+        txtEmail = new javax.swing.JTextField();
+        txtEndereco = new javax.swing.JTextField();
+        txtSenha = new javax.swing.JTextField();
+        txtCpf = new javax.swing.JTextField();
+        txtTipoSangue = new javax.swing.JTextField();
+        txtDataNascimento = new javax.swing.JTextField();
+        btnCadastrar = new javax.swing.JButton();
+        btnSemCadastro = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         jTextField3.setText("Digite o nome Inteiro");
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -62,92 +65,92 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
 
         JQuadroVermelho.setBackground(new java.awt.Color(204, 0, 0));
-        JQuadroVermelho.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        JQuadroVermelho.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         JQuadroVermelho.setForeground(new java.awt.Color(102, 0, 0));
 
-        LblNome.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        LblNome.setText("Nome:");
+        jblNome.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jblNome.setText("Nome:");
 
-        JblDataNascimento.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        JblDataNascimento.setText("Data De Nascimento:");
+        jblDataNascimento.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jblDataNascimento.setText("Data De Nascimento:");
 
-        LblTituloCadastro.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
-        LblTituloCadastro.setText("Cadastro");
+        jblTituloCadastro.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
+        jblTituloCadastro.setText("Cadastro");
 
-        JblEndereco.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        JblEndereco.setText("Endereço:");
+        jblEndereco.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jblEndereco.setText("Endereço:");
 
-        JblTipoSangue.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        JblTipoSangue.setText("Tipo sanguíneo:");
+        jblTipoSangue.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jblTipoSangue.setText("Tipo sanguíneo:");
 
-        JblSenha.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        JblSenha.setText("Senha:");
+        jblSenha.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jblSenha.setText("Senha:");
 
-        JblEmail.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        JblEmail.setText("Email:");
+        jblEmail.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jblEmail.setText("Email:");
 
-        JblCpf.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        JblCpf.setText("CPF:");
+        jblCpf.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jblCpf.setText("CPF:");
 
-        TxtNome.setText("Digite o nome Inteiro");
-        TxtNome.addActionListener(new java.awt.event.ActionListener() {
+        txtNome.setText("Digite o nome Inteiro");
+        txtNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtNomeActionPerformed(evt);
+                txtNomeActionPerformed(evt);
             }
         });
 
-        TxtEmail.setText("Digite o sem Email");
-        TxtEmail.addActionListener(new java.awt.event.ActionListener() {
+        txtEmail.setText("Digite o sem Email");
+        txtEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtEmailActionPerformed(evt);
+                txtEmailActionPerformed(evt);
             }
         });
 
-        TxtEndereco.setText("Digite o seu Endereço");
-        TxtEndereco.addActionListener(new java.awt.event.ActionListener() {
+        txtEndereco.setText("Digite o seu Endereço");
+        txtEndereco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtEnderecoActionPerformed(evt);
+                txtEnderecoActionPerformed(evt);
             }
         });
 
-        TxtSenha.setText("************");
-        TxtSenha.addActionListener(new java.awt.event.ActionListener() {
+        txtSenha.setText("************");
+        txtSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtSenhaActionPerformed(evt);
+                txtSenhaActionPerformed(evt);
             }
         });
 
-        TxtCpf.setText("Digite o seu CPF");
-        TxtCpf.addActionListener(new java.awt.event.ActionListener() {
+        txtCpf.setText("Digite o seu CPF");
+        txtCpf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtCpfActionPerformed(evt);
+                txtCpfActionPerformed(evt);
             }
         });
 
-        TxtTipoSangue.setText("A+ B+ AB+ A- B- AB- O+ O-");
-        TxtTipoSangue.addActionListener(new java.awt.event.ActionListener() {
+        txtTipoSangue.setText("A+ B+ AB+ A- B- AB- O+ O-");
+        txtTipoSangue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtTipoSangueActionPerformed(evt);
+                txtTipoSangueActionPerformed(evt);
             }
         });
 
-        TxtDataNascimento.setText("**/**/****");
-        TxtDataNascimento.addActionListener(new java.awt.event.ActionListener() {
+        txtDataNascimento.setText("**/**/****");
+        txtDataNascimento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtDataNascimentoActionPerformed(evt);
+                txtDataNascimentoActionPerformed(evt);
             }
         });
 
-        BtnCadastrar.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        BtnCadastrar.setText("Cadastrar");
-        BtnCadastrar.addActionListener(new java.awt.event.ActionListener() {
+        btnCadastrar.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCadastrar.setText("Cadastrar");
+        btnCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnCadastrarActionPerformed(evt);
+                btnCadastrarActionPerformed(evt);
             }
         });
 
-        BtnSemCadastro.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        BtnSemCadastro.setText("Ainda não tenho Cadastro");
+        btnSemCadastro.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnSemCadastro.setText("Ainda não tenho Cadastro");
 
         javax.swing.GroupLayout JQuadroVermelhoLayout = new javax.swing.GroupLayout(JQuadroVermelho);
         JQuadroVermelho.setLayout(JQuadroVermelhoLayout);
@@ -157,88 +160,105 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
-                        .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JQuadroVermelhoLayout.createSequentialGroup()
-                                .addComponent(JblTipoSangue)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
-                                .addComponent(TxtTipoSangue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
-                                .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(BtnSemCadastro, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, JQuadroVermelhoLayout.createSequentialGroup()
-                                        .addComponent(JblDataNascimento)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(TxtDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, JQuadroVermelhoLayout.createSequentialGroup()
-                                        .addComponent(JblCpf)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(TxtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, JQuadroVermelhoLayout.createSequentialGroup()
-                                        .addComponent(JblSenha)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(TxtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addComponent(BtnCadastrar))
+                        .addComponent(jblTipoSangue)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtTipoSangue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
-                        .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
-                                .addComponent(JblEmail)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(TxtEmail))
-                            .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
-                                .addComponent(JblEndereco)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(TxtEndereco))
-                            .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
-                                .addComponent(LblNome)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(TxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(btnSemCadastro)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
+                        .addComponent(btnCadastrar))
+                    .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
+                        .addComponent(jblDataNascimento)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
+                        .addComponent(jblCpf)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
+                        .addComponent(jblSenha)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
+                            .addComponent(jblEmail)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(txtEmail))
+                        .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
+                            .addComponent(jblEndereco)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtEndereco))
+                        .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
+                            .addComponent(jblNome)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(19, 19, 19))
             .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(LblTituloCadastro)
+                .addGap(34, 34, 34)
+                .addComponent(jblTituloCadastro)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         JQuadroVermelhoLayout.setVerticalGroup(
             JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JQuadroVermelhoLayout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(LblTituloCadastro)
-                .addGap(27, 27, 27)
+                .addGap(39, 39, 39)
+                .addComponent(jblTituloCadastro)
+                .addGap(30, 30, 30)
                 .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LblNome)
-                    .addComponent(TxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jblNome)
+                    .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JblDataNascimento)
-                    .addComponent(TxtDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jblDataNascimento)
+                    .addComponent(txtDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JblEndereco)
-                    .addComponent(TxtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jblEndereco)
+                    .addComponent(txtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JblTipoSangue)
-                    .addComponent(TxtTipoSangue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jblTipoSangue)
+                    .addComponent(txtTipoSangue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JblEmail)
-                    .addComponent(TxtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jblEmail)
+                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JblCpf)
-                    .addComponent(TxtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jblCpf)
+                    .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JblSenha)
-                    .addComponent(TxtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                    .addComponent(jblSenha)
+                    .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addGroup(JQuadroVermelhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BtnCadastrar)
-                    .addComponent(BtnSemCadastro))
+                    .addComponent(btnCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSemCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32))
+        );
+
+        jPanel1.setBackground(new java.awt.Color(153, 0, 0));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel1.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
+        jLabel1.setText("Sangue Amigo");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(19, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(203, 203, 203)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -246,54 +266,56 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(304, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(JQuadroVermelho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(JQuadroVermelho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(JQuadroVermelho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void TxtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TxtNomeActionPerformed
+    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
+            // TODO add your handling code here:
+           txtNome.addActionListener(usuarioDAO.nome_usuario);
+    
+    }//GEN-LAST:event_txtNomeActionPerformed
 
-    private void TxtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtEmailActionPerformed
+    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TxtEmailActionPerformed
+    }//GEN-LAST:event_txtEmailActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
-    private void TxtEnderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtEnderecoActionPerformed
+    private void txtEnderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEnderecoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TxtEnderecoActionPerformed
+    }//GEN-LAST:event_txtEnderecoActionPerformed
 
-    private void TxtSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtSenhaActionPerformed
+    private void txtSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenhaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TxtSenhaActionPerformed
+    }//GEN-LAST:event_txtSenhaActionPerformed
 
-    private void TxtCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCpfActionPerformed
+    private void txtCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCpfActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TxtCpfActionPerformed
+    }//GEN-LAST:event_txtCpfActionPerformed
 
-    private void TxtTipoSangueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtTipoSangueActionPerformed
+    private void txtTipoSangueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTipoSangueActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TxtTipoSangueActionPerformed
+    }//GEN-LAST:event_txtTipoSangueActionPerformed
 
-    private void TxtDataNascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtDataNascimentoActionPerformed
+    private void txtDataNascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDataNascimentoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TxtDataNascimentoActionPerformed
+    }//GEN-LAST:event_txtDataNascimentoActionPerformed
 
-    private void BtnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCadastrarActionPerformed
+    private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BtnCadastrarActionPerformed
+    }//GEN-LAST:event_btnCadastrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -331,27 +353,30 @@ public class UsuarioCadastro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BtnCadastrar;
-    private javax.swing.JButton BtnSemCadastro;
     private javax.swing.JPanel JQuadroVermelho;
-    private javax.swing.JLabel JblCpf;
-    private javax.swing.JLabel JblDataNascimento;
-    private javax.swing.JLabel JblEmail;
-    private javax.swing.JLabel JblEndereco;
-    private javax.swing.JLabel JblSenha;
-    private javax.swing.JLabel JblTipoSangue;
-    private javax.swing.JLabel LblNome;
-    private javax.swing.JLabel LblTituloCadastro;
-    private javax.swing.JTextField TxtCpf;
-    private javax.swing.JTextField TxtDataNascimento;
-    private javax.swing.JTextField TxtEmail;
-    private javax.swing.JTextField TxtEndereco;
-    private javax.swing.JTextField TxtNome;
-    private javax.swing.JTextField TxtSenha;
-    private javax.swing.JTextField TxtTipoSangue;
+    private javax.swing.JButton btnCadastrar;
+    private javax.swing.JButton btnSemCadastro;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTree jTree1;
+    private javax.swing.JLabel jblCpf;
+    private javax.swing.JLabel jblDataNascimento;
+    private javax.swing.JLabel jblEmail;
+    private javax.swing.JLabel jblEndereco;
+    private javax.swing.JLabel jblNome;
+    private javax.swing.JLabel jblSenha;
+    private javax.swing.JLabel jblTipoSangue;
+    private javax.swing.JLabel jblTituloCadastro;
+    private javax.swing.JTextField txtCpf;
+    private javax.swing.JTextField txtDataNascimento;
+    private javax.swing.JTextField txtEmail;
+    private javax.swing.JTextField txtEndereco;
+    private javax.swing.JTextField txtNome;
+    private javax.swing.JTextField txtSenha;
+    private javax.swing.JTextField txtTipoSangue;
     // End of variables declaration//GEN-END:variables
 }
