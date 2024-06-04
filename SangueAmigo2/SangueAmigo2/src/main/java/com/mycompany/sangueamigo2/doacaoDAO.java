@@ -20,7 +20,7 @@ public class doacaoDAO {
        + doacao.getLocal_doacao() + "','"
        + doacao.getData_doacao() + "','"        
        + doacao.getHora_doacao() + "','"
-        + doacao.getOpcaoDoacao() + "','"       
+       + doacao.getOpcaoDoacao() + "','"      
        + doacao.getCodigodoacao() + "')" ;
       
       

@@ -170,7 +170,7 @@ public class UsuarioDoacao extends javax.swing.JFrame {
                             doacao.setOpcaoDoacao(tx11.getText());
                             doacao.setCodigodoacao(Integer.parseInt(tx12.getText()));
                             
-                                                 
+                           
                             doacaoBD = new doacaoDAO();
                             doacaoBD.insert(doacao);
                             

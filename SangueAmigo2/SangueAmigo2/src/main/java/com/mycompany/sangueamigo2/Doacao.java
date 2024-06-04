@@ -9,6 +9,7 @@ public class Doacao {
       private String data_doacao;
       private String hora_doacao;
       private String opcaoDoacao;
+      
      
       //bd
       public Doacao(int codigodoacao, String local_doacao, String data_doacao, String hora_doacao, String opcaoDoacao) {
@@ -17,6 +18,7 @@ public class Doacao {
           this.data_doacao = data_doacao;
           this.hora_doacao = hora_doacao;
           this.opcaoDoacao = opcaoDoacao;
+          
       }
       public Doacao (){
         this.codigodoacao = 0;
