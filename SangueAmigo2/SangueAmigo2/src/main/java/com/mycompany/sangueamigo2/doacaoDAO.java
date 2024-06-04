@@ -16,11 +16,12 @@ public class doacaoDAO {
        + usuario.getSenha() + "')";
       */
       
-       String sql =   "INSERT INTO agendardoacao (local_doacao, data_doacao, hora_doacao, opcaoDoacao) VALUES ('"
+       String sql =   "INSERT INTO agendardoacao (local_doacao, data_doacao, hora_doacao, opcaoDoacao, codigodoacao) VALUES ('"
        + doacao.getLocal_doacao() + "','"
        + doacao.getData_doacao() + "','"        
-       + doacao.getHora_doacao() + "','"      
-       + doacao.getOpcaoDoacao() + "')" ;
+       + doacao.getHora_doacao() + "','"
+        + doacao.getOpcaoDoacao() + "','"       
+       + doacao.getCodigodoacao() + "')" ;
       
       
      

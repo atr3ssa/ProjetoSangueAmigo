@@ -42,6 +42,8 @@ public class UsuarioDoacao extends javax.swing.JFrame {
         tx9 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         B5 = new javax.swing.JButton();
+        jLbCodigo = new javax.swing.JLabel();
+        tx12 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,6 +72,9 @@ public class UsuarioDoacao extends javax.swing.JFrame {
             }
         });
 
+        jLbCodigo.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jLbCodigo.setText("Código:");
+
         javax.swing.GroupLayout jQuadroDoacaoLayout = new javax.swing.GroupLayout(jQuadroDoacao);
         jQuadroDoacao.setLayout(jQuadroDoacaoLayout);
         jQuadroDoacaoLayout.setHorizontalGroup(
@@ -94,12 +99,18 @@ public class UsuarioDoacao extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
                         .addGap(85, 85, 85)
-                        .addComponent(jLbOpcao)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tx11, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                                .addComponent(jLbCodigo)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(tx12, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                                .addComponent(jLbOpcao)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(tx11, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(138, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jQuadroDoacaoLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(B5, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58))
         );
@@ -108,11 +119,11 @@ public class UsuarioDoacao extends javax.swing.JFrame {
             .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
                 .addGap(71, 71, 71)
                 .addComponent(jLabel1)
-                .addGap(69, 69, 69)
-                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tx8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jlbLocal))
-                .addGap(31, 31, 31)
+                .addGap(64, 64, 64)
+                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlbLocal)
+                    .addComponent(tx8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
                 .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLbData)
                     .addComponent(tx9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -123,7 +134,11 @@ public class UsuarioDoacao extends javax.swing.JFrame {
                     .addComponent(jLbOpcao)
                     .addComponent(tx11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
-                .addComponent(B5, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(B5, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLbCodigo)
+                        .addComponent(tx12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(50, 50, 50))
         );
 
@@ -146,7 +161,25 @@ public class UsuarioDoacao extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void B5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B5ActionPerformed
-        // TODO add your handling code here:
+        //pegando o que foi digitado no Nome do formulario e atualizando
+                            //padrão mvc
+                            
+                            doacao.setLocal_doacao(tx8.getText());
+                            doacao.setData_doacao(tx9.getText());
+                            doacao.setHora_doacao  (tx10.getText());
+                            doacao.setOpcaoDoacao(tx11.getText());
+                            doacao.setCodigodoacao(Integer.parseInt(tx12.getText()));
+                            
+                                                 
+                            doacaoBD = new doacaoDAO();
+                            doacaoBD.insert(doacao);
+                            
+                            // limpar campos
+                            tx8.setText("");
+			    tx9.setText("");
+			    tx10.setText("");    
+                            tx11.setText("");
+                            tx12.setText("");
     }//GEN-LAST:event_B5ActionPerformed
 
     /**
@@ -188,6 +221,7 @@ public class UsuarioDoacao extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton B5;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLbCodigo;
     private javax.swing.JLabel jLbData;
     private javax.swing.JLabel jLbHora;
     private javax.swing.JLabel jLbOpcao;
@@ -195,6 +229,7 @@ public class UsuarioDoacao extends javax.swing.JFrame {
     private javax.swing.JLabel jlbLocal;
     private javax.swing.JTextField tx10;
     private javax.swing.JTextField tx11;
+    private javax.swing.JTextField tx12;
     private javax.swing.JTextField tx8;
     private javax.swing.JTextField tx9;
     // End of variables declaration//GEN-END:variables
