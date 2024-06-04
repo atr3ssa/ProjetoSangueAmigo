@@ -1,14 +1,14 @@
-// pacote
+//pacote
 package com.mycompany.sangueamigo2;
-// Importações sql
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
-//Tudo que é manipulação de banco, coloco em uma classe a parte chamada: UsuarioDAO (o que passa as infos do Usuario para o banco)
-public class usuarioDAO {
-  public void insert(Usuario usuario) {
+
+public class doacaoDAO {
+    public void insert(Doacao  doacao) {
        
        //Com auto increment
       /*String sql =   "INSERT INTO usuario (nome,senha) VALUES ('"
@@ -16,14 +16,11 @@ public class usuarioDAO {
        + usuario.getSenha() + "')";
       */
       
-       String sql =   "INSERT INTO usuario (nome_usuario, datadeNascimento, endereco, tipoSanguineo, email_usuario, cpf_usuario, senha_usuario) VALUES ('"
-       + usuario.getNome_usuario() + "','"
-       + usuario.getDatadeNascimento() + "','"        
-       + usuario.getEndereco() + "','"
-       + usuario.getTipoSanguineo() + "','"
-       + usuario.getEmail_usuario() + "','"        
-       + usuario.getCpf_usuario() + "','"       
-       + usuario.getSenha_usuario() + "')" ;
+       String sql =   "INSERT INTO agendardoacao (local_doacao, data_doacao, hora_doacao, opcaoDoacao) VALUES ('"
+       + doacao.getLocal_doacao() + "','"
+       + doacao.getData_doacao() + "','"        
+       + doacao.getHora_doacao() + "','"      
+       + doacao.getOpcaoDoacao() + "')" ;
       
       
      
@@ -46,5 +43,4 @@ public class usuarioDAO {
        }
     }
 }
-  
 

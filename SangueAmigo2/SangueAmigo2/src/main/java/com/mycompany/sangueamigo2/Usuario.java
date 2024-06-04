@@ -1,4 +1,4 @@
-
+//pacote
 package com.mycompany.sangueamigo2;
 
 
@@ -34,7 +34,7 @@ public class Usuario {
         this.cpf_usuario = "";
         this.senha_usuario = "";
     }
-    public Usuario (String login, String senha){
+    public Usuario (String nome_usuario, String senha_usuario){
         this.codigo = 0;
         this.nome_usuario = nome_usuario;
         this.senha_usuario = senha_usuario;
