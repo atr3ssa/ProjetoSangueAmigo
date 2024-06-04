@@ -11,6 +11,8 @@ import javax.swing.JOptionPane;
 //Tudo que é manipulação de banco, coloco em uma classe a parte chamada: UsuarioDAO (o que passa as infos do Usuario para o banco)
 public class usuarioDAO {
     
+    //Métodos
+    
     //Método Insert para inclusão no usuario DAO
       public void insert(Usuario usuario) {
     //Código para auto incremento

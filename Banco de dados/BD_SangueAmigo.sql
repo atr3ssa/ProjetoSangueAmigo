@@ -51,6 +51,8 @@ CREATE TABLE IF NOT EXISTS `AgendarExames` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+Alter table usuario add column email Varchar(45) not null;
+Alter table usuario add column CPF_aluno Varchar(15) not null;
 
 describe usuario;
 
