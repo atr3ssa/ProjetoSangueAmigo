@@ -1,6 +1,13 @@
+-- mostrar databases --
 show databases;
 -- create database SangueAmigo;
+
+-- usar database sangueamigo
 use sangueamigo;
+
+-- -----------------------------------
+-- Tabela Usuario
+-- -----------------------------------
 
 CREATE TABLE IF NOT EXISTS `Usuario` (
   `id_usuario` INT NOT NULL AUTO_INCREMENT,
@@ -12,10 +19,10 @@ CREATE TABLE IF NOT EXISTS `Usuario` (
   PRIMARY KEY (`id_usuario`))
 ENGINE = InnoDB;
 
+-- -----------------------------------------
+-- Tabela AgendarDoacao
+-- -----------------------------------------
 
--- -----------------------------------------------------
--- Table `mydb`.`AgendarDoacao`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AgendarDoacao` (
   `codigoDoacao` VARCHAR(45) NOT NULL,
   `local_doacao` VARCHAR(45) NOT NULL,
@@ -33,9 +40,10 @@ CREATE TABLE IF NOT EXISTS `AgendarDoacao` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `mydb`.`AgendarExames`
--- -----------------------------------------------------
+-- -----------------------------------------
+-- Tabela AgendarExames
+-- -----------------------------------------
+
 CREATE TABLE IF NOT EXISTS `AgendarExames` (
   `codigoExame` VARCHAR(45) NOT NULL,
   `local_exame` VARCHAR(45) NOT NULL,
@@ -51,8 +59,17 @@ CREATE TABLE IF NOT EXISTS `AgendarExames` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+-- Add novas colunas na tabela Usuario
+
 Alter table usuario add column email Varchar(45) not null;
 Alter table usuario add column CPF_aluno Varchar(15) not null;
+
+-- Renomear colunas na tabela Usuario 
+Alter table usuario
+rename column email to email_usuario,
+rename column CPF_aluno to cpf_usuario;
+
+-- Descreva a Tabela Usuario
 
 describe usuario;
 
