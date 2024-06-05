@@ -82,6 +82,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         tx5 = new javax.swing.JTextField();
         tx7 = new javax.swing.JTextField();
         tx6 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jQuadrovermelho1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -143,6 +144,9 @@ public class UsuarioCadastro extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton1.setText("Voltar");
+
         javax.swing.GroupLayout JQuadroVermelho2Layout = new javax.swing.GroupLayout(JQuadroVermelho2);
         JQuadroVermelho2.setLayout(JQuadroVermelho2Layout);
         JQuadroVermelho2Layout.setHorizontalGroup(
@@ -152,9 +156,6 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                     .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                                .addGap(229, 229, 229)
-                                .addComponent(B1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, JQuadroVermelho2Layout.createSequentialGroup()
                                     .addComponent(jblNome2)
@@ -188,7 +189,12 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                         .addGap(12, 12, 12)
                         .addComponent(jblTipoSangue2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tx4, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(tx4, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton1)
+                        .addGap(169, 169, 169)
+                        .addComponent(B1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         JQuadroVermelho2Layout.setVerticalGroup(
@@ -225,8 +231,13 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                     .addComponent(tx7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jblSenha2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                .addComponent(B1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32))
+                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JQuadroVermelho2Layout.createSequentialGroup()
+                        .addComponent(B1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JQuadroVermelho2Layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(16, 16, 16))))
         );
 
         jQuadrovermelho1.setBackground(new java.awt.Color(153, 0, 0));
@@ -239,7 +250,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         jQuadrovermelho1.setLayout(jQuadrovermelho1Layout);
         jQuadrovermelho1Layout.setHorizontalGroup(
             jQuadrovermelho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jQuadrovermelho1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jQuadrovermelho1Layout.createSequentialGroup()
                 .addContainerGap(19, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addContainerGap())
@@ -249,7 +260,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
             .addGroup(jQuadrovermelho1Layout.createSequentialGroup()
                 .addGap(203, 203, 203)
                 .addComponent(jLabel1)
-                .addContainerGap(249, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -351,6 +362,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
     private javax.swing.JPanel JQuadroVermelho2;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jQuadrovermelho1;
     private javax.swing.JScrollPane jScrollPane1;
