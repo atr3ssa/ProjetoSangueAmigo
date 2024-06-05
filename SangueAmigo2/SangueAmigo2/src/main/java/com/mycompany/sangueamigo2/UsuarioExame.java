@@ -45,6 +45,7 @@ public class UsuarioExame extends javax.swing.JFrame {
         tx155 = new javax.swing.JTextField();
         tx166 = new javax.swing.JTextField();
         tx177 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         jTextField7.setBackground(new java.awt.Color(204, 0, 0));
         jTextField7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
@@ -54,7 +55,7 @@ public class UsuarioExame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jQuadroExames.setBackground(new java.awt.Color(153, 0, 0));
+        jQuadroExames.setBackground(new java.awt.Color(204, 0, 0));
 
         jlbLocal4.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jlbLocal4.setText("Local:");
@@ -88,73 +89,80 @@ public class UsuarioExame extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton1.setText("Voltar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jQuadroExamesLayout = new javax.swing.GroupLayout(jQuadroExames);
         jQuadroExames.setLayout(jQuadroExamesLayout);
         jQuadroExamesLayout.setHorizontalGroup(
             jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jQuadroExamesLayout.createSequentialGroup()
                 .addGap(60, 60, 60)
+                .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jQuadroExamesLayout.createSequentialGroup()
+                        .addComponent(jLbOpcao4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tx155))
+                    .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(jQuadroExamesLayout.createSequentialGroup()
+                            .addComponent(jlbLocal4)
+                            .addGap(18, 18, 18)
+                            .addComponent(tx133, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLbCodigo3))
+                        .addGroup(jQuadroExamesLayout.createSequentialGroup()
+                            .addComponent(jLbData4)
+                            .addGap(18, 18, 18)
+                            .addComponent(tx144, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLbHora4))
+                        .addComponent(jlbExame, javax.swing.GroupLayout.Alignment.LEADING)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jQuadroExamesLayout.createSequentialGroup()
-                        .addComponent(jLbCodigo3)
-                        .addGap(18, 18, 18)
-                        .addComponent(tx166, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(B9, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55))
-                    .addGroup(jQuadroExamesLayout.createSequentialGroup()
-                        .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jQuadroExamesLayout.createSequentialGroup()
-                                .addComponent(jlbLocal4)
-                                .addGap(18, 18, 18)
-                                .addComponent(tx133, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jQuadroExamesLayout.createSequentialGroup()
-                                .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(jQuadroExamesLayout.createSequentialGroup()
-                                        .addComponent(jLbData4)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(tx144, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLbHora4))
-                                    .addComponent(jlbExame))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(tx177, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jQuadroExamesLayout.createSequentialGroup()
-                                .addComponent(jLbOpcao4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(tx155, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(158, 158, Short.MAX_VALUE))))
+                    .addComponent(tx177, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tx166, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(134, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jQuadroExamesLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(B9, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43))
         );
         jQuadroExamesLayout.setVerticalGroup(
             jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jQuadroExamesLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
+                .addGap(61, 61, 61)
                 .addComponent(jlbExame)
-                .addGap(46, 46, 46)
+                .addGap(62, 62, 62)
                 .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlbLocal4)
-                    .addComponent(tx133, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tx133, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLbCodigo3)
+                    .addComponent(tx166, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLbData4)
                     .addComponent(jLbHora4)
                     .addComponent(tx144, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tx177, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
-                .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLbOpcao4)
-                    .addComponent(tx155, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jQuadroExamesLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
-                        .addComponent(B9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(64, 64, 64))
                     .addGroup(jQuadroExamesLayout.createSequentialGroup()
-                        .addGap(33, 33, 33)
+                        .addGap(42, 42, 42)
                         .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLbCodigo3)
-                            .addComponent(tx166, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jLbOpcao4)
+                            .addComponent(tx155, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 124, Short.MAX_VALUE)
+                        .addComponent(jButton1))
+                    .addGroup(jQuadroExamesLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(B9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -204,6 +212,11 @@ public class UsuarioExame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tx166ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        new UsuarioPerfil().setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -241,70 +254,21 @@ public class UsuarioExame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton B5;
-    private javax.swing.JButton B6;
-    private javax.swing.JButton B7;
-    private javax.swing.JButton B8;
     private javax.swing.JButton B9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLbCodigo;
-    private javax.swing.JLabel jLbCodigo1;
-    private javax.swing.JLabel jLbCodigo2;
     private javax.swing.JLabel jLbCodigo3;
-    private javax.swing.JLabel jLbData;
-    private javax.swing.JLabel jLbData1;
-    private javax.swing.JLabel jLbData2;
-    private javax.swing.JLabel jLbData3;
     private javax.swing.JLabel jLbData4;
-    private javax.swing.JLabel jLbHora;
-    private javax.swing.JLabel jLbHora1;
-    private javax.swing.JLabel jLbHora2;
-    private javax.swing.JLabel jLbHora3;
     private javax.swing.JLabel jLbHora4;
-    private javax.swing.JLabel jLbOpcao;
-    private javax.swing.JLabel jLbOpcao1;
-    private javax.swing.JLabel jLbOpcao2;
-    private javax.swing.JLabel jLbOpcao3;
     private javax.swing.JLabel jLbOpcao4;
-    private javax.swing.JPanel jQuadroDoacao;
-    private javax.swing.JPanel jQuadroDoacao1;
-    private javax.swing.JPanel jQuadroDoacao2;
-    private javax.swing.JPanel jQuadroDoacao3;
     private javax.swing.JPanel jQuadroExames;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JLabel jlbExame;
-    private javax.swing.JLabel jlbLocal;
-    private javax.swing.JLabel jlbLocal1;
-    private javax.swing.JLabel jlbLocal2;
-    private javax.swing.JLabel jlbLocal3;
     private javax.swing.JLabel jlbLocal4;
-    private javax.swing.JTextField tx10;
-    private javax.swing.JTextField tx11;
-    private javax.swing.JTextField tx12;
-    private javax.swing.JTextField tx13;
     private javax.swing.JTextField tx133;
-    private javax.swing.JTextField tx14;
     private javax.swing.JTextField tx144;
-    private javax.swing.JTextField tx15;
     private javax.swing.JTextField tx155;
-    private javax.swing.JTextField tx16;
     private javax.swing.JTextField tx166;
-    private javax.swing.JTextField tx17;
     private javax.swing.JTextField tx177;
-    private javax.swing.JTextField tx18;
-    private javax.swing.JTextField tx19;
-    private javax.swing.JTextField tx20;
-    private javax.swing.JTextField tx21;
-    private javax.swing.JTextField tx22;
-    private javax.swing.JTextField tx23;
-    private javax.swing.JTextField tx24;
-    private javax.swing.JTextField tx25;
-    private javax.swing.JTextField tx26;
-    private javax.swing.JTextField tx8;
-    private javax.swing.JTextField tx9;
     // End of variables declaration//GEN-END:variables
 }

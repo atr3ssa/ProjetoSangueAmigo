@@ -72,6 +72,15 @@ rename column CPF_aluno to cpf_usuario;
 -- Descreva a Tabela Usuario
 
 describe usuario;
+describe agendardoacao;
+describe agendarexames;
 
+select* from agendardoacao;
+
+alter table agendardoacao drop column codigoDoacao;
+Alter table agendardoacao add column codigodoacao int not null;
+-- teste
+INSERT INTO usuario (nome_usuario, datadeNascimento, endereco, tipoSanguineo, email_usuario, cpf_usuario, senha_usuario) VALUES ('ana','01012000','av bandeirantes','B-','anabanana@gmail.com','12323434545','12345678')
+INSERT INTO agendardoacao (local_doacao, data_doacao, hora_doacao, opcaoDoacao, codigodoacao) VALUES ('Cotia','12/04','14:00','plaquetas','0')
 
 
