@@ -43,8 +43,10 @@ public class UsuarioDoacao extends javax.swing.JFrame {
         tx14 = new javax.swing.JTextField();
         tx13 = new javax.swing.JTextField();
         lblTituloD = new javax.swing.JLabel();
-        B7 = new javax.swing.JButton();
+        B9 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        B10 = new javax.swing.JButton();
+        B11 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,11 +67,11 @@ public class UsuarioDoacao extends javax.swing.JFrame {
         lblTituloD.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
         lblTituloD.setText("Agendar Doações");
 
-        B7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        B7.setText("Agendar");
-        B7.addActionListener(new java.awt.event.ActionListener() {
+        B9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        B9.setText("Agendar");
+        B9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B7ActionPerformed(evt);
+                B9ActionPerformed(evt);
             }
         });
 
@@ -81,38 +83,67 @@ public class UsuarioDoacao extends javax.swing.JFrame {
             }
         });
 
+        B10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        B10.setText("Consultar");
+        B10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B10ActionPerformed(evt);
+            }
+        });
+
+        B11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        B11.setText("Excluir");
+        B11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B11ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jQuadroDoacaoLayout = new javax.swing.GroupLayout(jQuadroDoacao);
         jQuadroDoacao.setLayout(jQuadroDoacaoLayout);
         jQuadroDoacaoLayout.setHorizontalGroup(
             jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(B7, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48))
-            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jQuadroDoacaoLayout.createSequentialGroup()
+                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
-                        .addComponent(lblHoraD)
-                        .addGap(18, 18, 18)
-                        .addComponent(tx14, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(lblTituloD)
-                    .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(B10, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
+                        .addGap(59, 59, 59)
+                        .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTituloD)
+                            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                                        .addComponent(lblLocalD)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(tx12))
+                                    .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                                        .addComponent(lblDataD)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(tx13, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblHoraD)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(tx14, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(B9, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
+                        .addGap(53, 53, 53)
                         .addComponent(lblOpcaoD)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tx15, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
-                            .addComponent(lblLocalD)
-                            .addGap(18, 18, 18)
-                            .addComponent(tx12, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
-                            .addComponent(lblDataD)
-                            .addGap(18, 18, 18)
-                            .addComponent(tx13, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(189, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(B11, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                                .addComponent(tx15, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 226, Short.MAX_VALUE)))))
+                .addGap(19, 19, 19))
         );
         jQuadroDoacaoLayout.setVerticalGroup(
             jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,22 +154,28 @@ public class UsuarioDoacao extends javax.swing.JFrame {
                 .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tx12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblLocalD))
-                .addGap(29, 29, 29)
+                .addGap(18, 18, 18)
                 .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDataD)
-                    .addComponent(tx13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tx13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblHoraD)
-                    .addComponent(tx14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
-                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblOpcaoD)
-                    .addComponent(tx15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                    .addComponent(tx14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDataD))
                 .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(B7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                        .addComponent(B11, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15))
+                    .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblOpcaoD)
+                            .addComponent(tx15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(B10, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(B9, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
                 .addGap(27, 27, 27))
         );
 
@@ -156,7 +193,7 @@ public class UsuarioDoacao extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void B7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B7ActionPerformed
+    private void B9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B9ActionPerformed
                             //pegando o que foi digitado no Nome do formulario e atualizando
                             //padrão mvc
                             
@@ -174,12 +211,20 @@ public class UsuarioDoacao extends javax.swing.JFrame {
 			    tx13.setText("");
 			    tx14.setText("");    
                             tx15.setText("");                          
-    }//GEN-LAST:event_B7ActionPerformed
+    }//GEN-LAST:event_B9ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         new UsuarioPerfil().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void B10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B10ActionPerformed
+
+    private void B11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B11ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -218,7 +263,9 @@ public class UsuarioDoacao extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton B7;
+    private javax.swing.JButton B10;
+    private javax.swing.JButton B11;
+    private javax.swing.JButton B9;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jQuadroDoacao;
     private javax.swing.JLabel lblDataD;
