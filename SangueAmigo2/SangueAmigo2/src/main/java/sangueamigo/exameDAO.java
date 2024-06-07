@@ -1,8 +1,8 @@
-
+// pacote
 package sangueamigo;
 
-import sangueamigo.ConexaoDB;
-import sangueamigo.Exame;
+//importaçoes java
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 
 public class exameDAO {
-    public void insert(Exame exame) {
+    public void insert(AgendarExames exame) {
        
        //Com auto increment
       /*String sql =   "INSERT INTO usuario (nome,senha) VALUES ('"
@@ -18,12 +18,11 @@ public class exameDAO {
        + usuario.getSenha() + "')";
       */
       
-       String sql =   "INSERT INTO agendardoacao (local_exame, data_exame, hora_exame, opcaoExame, codigoExame) VALUES ('"
+       String sql =   "INSERT INTO agendarexames (local_exame, data_exame, hora_exame, opcaoExame) VALUES ('"
        + exame.getLocal_exame() + "','"
        + exame.getData_exame() + "','"        
        + exame.getHora_exame() + "','"
-       + exame.getOpcaoExame() + "','"      
-       + exame.getCodigoExame() + "')" ;
+       + exame.getOpcaoExame() + "')" ;      
       
       
      

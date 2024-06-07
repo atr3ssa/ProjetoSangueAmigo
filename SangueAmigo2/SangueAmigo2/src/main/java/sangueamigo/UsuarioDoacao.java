@@ -4,9 +4,7 @@
  */
 package sangueamigo;
 
-import sangueamigo.ConexaoDB;
-import sangueamigo.doacaoDAO;
-import sangueamigo.Doacao;
+
 
 /**
  *
@@ -14,7 +12,7 @@ import sangueamigo.Doacao;
  */
 public class UsuarioDoacao extends javax.swing.JFrame {
     // banco de dados
-                Doacao doacao = new Doacao();
+                AgendarDoacao doacao = new AgendarDoacao();
                 ConexaoDB conn = new ConexaoDB();  
                 //doacoesDAO = usuario padrao = todos os métodos de CRUD ficam aqui, tudo do banco fica nele
                 //doacao = normal, só os getters e setters
@@ -36,49 +34,44 @@ public class UsuarioDoacao extends javax.swing.JFrame {
     private void initComponents() {
 
         jQuadroDoacao = new javax.swing.JPanel();
-        jlbLocal = new javax.swing.JLabel();
-        jLbData = new javax.swing.JLabel();
-        jLbHora = new javax.swing.JLabel();
-        jLbOpcao = new javax.swing.JLabel();
-        tx8 = new javax.swing.JTextField();
-        tx11 = new javax.swing.JTextField();
-        tx10 = new javax.swing.JTextField();
-        tx9 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        B5 = new javax.swing.JButton();
-        jLbCodigo = new javax.swing.JLabel();
+        lblLocalD = new javax.swing.JLabel();
+        lblDataD = new javax.swing.JLabel();
+        lblHoraD = new javax.swing.JLabel();
+        lblOpcaoD = new javax.swing.JLabel();
         tx12 = new javax.swing.JTextField();
+        tx15 = new javax.swing.JTextField();
+        tx14 = new javax.swing.JTextField();
+        tx13 = new javax.swing.JTextField();
+        lblTituloD = new javax.swing.JLabel();
+        B7 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jQuadroDoacao.setBackground(new java.awt.Color(204, 0, 0));
 
-        jlbLocal.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        jlbLocal.setText("Local:");
+        lblLocalD.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lblLocalD.setText("Local:");
 
-        jLbData.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        jLbData.setText("Data:");
+        lblDataD.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lblDataD.setText("Data:");
 
-        jLbHora.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        jLbHora.setText("Hora:");
+        lblHoraD.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lblHoraD.setText("Hora:");
 
-        jLbOpcao.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        jLbOpcao.setText("Doação de:");
+        lblOpcaoD.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lblOpcaoD.setText("Doação de:");
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        jLabel1.setText("Agendar Doações");
+        lblTituloD.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        lblTituloD.setText("Agendar Doações");
 
-        B5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        B5.setText("Agendar");
-        B5.addActionListener(new java.awt.event.ActionListener() {
+        B7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        B7.setText("Agendar");
+        B7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B5ActionPerformed(evt);
+                B7ActionPerformed(evt);
             }
         });
-
-        jLbCodigo.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        jLbCodigo.setText("Código:");
 
         jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jButton1.setText("Voltar");
@@ -93,63 +86,58 @@ public class UsuarioDoacao extends javax.swing.JFrame {
         jQuadroDoacaoLayout.setHorizontalGroup(
             jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
-                        .addComponent(jLbOpcao)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tx11, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
-                        .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
-                                .addComponent(jlbLocal)
-                                .addGap(18, 18, 18)
-                                .addComponent(tx8, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLbCodigo))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
-                                .addComponent(jLbData)
-                                .addGap(18, 18, 18)
-                                .addComponent(tx9, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(65, 65, 65)
-                                .addComponent(jLbHora)))
-                        .addGap(18, 18, 18)
-                        .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tx10, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tx12, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(59, 125, Short.MAX_VALUE))
-            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(B5, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(B7, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48))
+            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                .addGap(59, 59, 59)
+                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                        .addComponent(lblHoraD)
+                        .addGap(18, 18, 18)
+                        .addComponent(tx14, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblTituloD)
+                    .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                        .addComponent(lblOpcaoD)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tx15, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
+                            .addComponent(lblLocalD)
+                            .addGap(18, 18, 18)
+                            .addComponent(tx12, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
+                            .addComponent(lblDataD)
+                            .addGap(18, 18, 18)
+                            .addComponent(tx13, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(189, Short.MAX_VALUE))
         );
         jQuadroDoacaoLayout.setVerticalGroup(
             jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
                 .addGap(62, 62, 62)
-                .addComponent(jLabel1)
+                .addComponent(lblTituloD)
                 .addGap(48, 48, 48)
                 .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tx8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jlbLocal)
-                    .addComponent(jLbCodigo)
-                    .addComponent(tx12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
+                    .addComponent(tx12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblLocalD))
+                .addGap(29, 29, 29)
                 .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLbData)
-                    .addComponent(tx9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLbHora)
-                    .addComponent(tx10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(51, 51, 51)
+                    .addComponent(lblDataD)
+                    .addComponent(tx13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
                 .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLbOpcao)
-                    .addComponent(tx11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                    .addComponent(lblHoraD)
+                    .addComponent(tx14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblOpcaoD)
+                    .addComponent(tx15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(B5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(B7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(27, 27, 27))
         );
@@ -168,27 +156,25 @@ public class UsuarioDoacao extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void B5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B5ActionPerformed
-        //pegando o que foi digitado no Nome do formulario e atualizando
+    private void B7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B7ActionPerformed
+                            //pegando o que foi digitado no Nome do formulario e atualizando
                             //padrão mvc
                             
-                            doacao.setLocal_doacao(tx8.getText());
-                            doacao.setData_doacao(tx9.getText());
-                            doacao.setHora_doacao  (tx10.getText());
-                            doacao.setOpcaoDoacao(tx11.getText());
-                            doacao.setCodigodoacao(Integer.parseInt(tx12.getText()));
+                            doacao.setLocal_doacao(tx12.getText());
+                            doacao.setData_doacao(tx13.getText());
+                            doacao.setHora_doacao(tx14.getText());
+                            doacao.setOpcaoDoacao(tx15.getText());
                             
                            
                             doacaoBD = new doacaoDAO();
                             doacaoBD.insert(doacao);
                             
                             // limpar campos
-                            tx8.setText("");
-			    tx9.setText("");
-			    tx10.setText("");    
-                            tx11.setText("");
                             tx12.setText("");
-    }//GEN-LAST:event_B5ActionPerformed
+			    tx13.setText("");
+			    tx14.setText("");    
+                            tx15.setText("");                          
+    }//GEN-LAST:event_B7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -232,19 +218,17 @@ public class UsuarioDoacao extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton B5;
+    private javax.swing.JButton B7;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLbCodigo;
-    private javax.swing.JLabel jLbData;
-    private javax.swing.JLabel jLbHora;
-    private javax.swing.JLabel jLbOpcao;
     private javax.swing.JPanel jQuadroDoacao;
-    private javax.swing.JLabel jlbLocal;
-    private javax.swing.JTextField tx10;
-    private javax.swing.JTextField tx11;
+    private javax.swing.JLabel lblDataD;
+    private javax.swing.JLabel lblHoraD;
+    private javax.swing.JLabel lblLocalD;
+    private javax.swing.JLabel lblOpcaoD;
+    private javax.swing.JLabel lblTituloD;
     private javax.swing.JTextField tx12;
-    private javax.swing.JTextField tx8;
-    private javax.swing.JTextField tx9;
+    private javax.swing.JTextField tx13;
+    private javax.swing.JTextField tx14;
+    private javax.swing.JTextField tx15;
     // End of variables declaration//GEN-END:variables
 }

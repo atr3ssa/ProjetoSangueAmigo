@@ -75,7 +75,7 @@ describe usuario;
 describe agendardoacao;
 describe agendarexames;
 
-select* from agendardoacao;
+select* from usuario;
 
 alter table agendardoacao drop column codigoDoacao;
 Alter table agendardoacao add column codigodoacao int not null;

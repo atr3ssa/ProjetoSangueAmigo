@@ -2,40 +2,43 @@
 package sangueamigo;
 
 
-public class Doacao {
+public class AgendarDoacao {
     // Encapsulamento de atributos
-      private int codigodoacao;
+      private int codigoDoacao;
       private String local_doacao;
       private String data_doacao;
       private String hora_doacao;
       private String opcaoDoacao;
+      private int doador;
       
      
       //bd
-      public Doacao(int codigodoacao, String local_doacao, String data_doacao, String hora_doacao, String opcaoDoacao) {
-          this.codigodoacao = codigodoacao;
+      public AgendarDoacao(int codigoDoacao, String local_doacao, String data_doacao, String hora_doacao, String opcaoDoacao, int doador) {
+          this.codigoDoacao = codigoDoacao;
           this.local_doacao = local_doacao;
           this.data_doacao = data_doacao;
           this.hora_doacao = hora_doacao;
           this.opcaoDoacao = opcaoDoacao;
+          this.doador = doador;
           
       }
-      public Doacao (){
-        this.codigodoacao = 0;
+      public AgendarDoacao (){
+        this.codigoDoacao = 0;
         this.local_doacao = "";
         this.data_doacao = "";
         this.hora_doacao = "";
         this.opcaoDoacao = "";
+        this.doador = 0;
     }
 
      // GETTERS E SETTERS 
-      
-    public int getCodigodoacao() {
-        return codigodoacao;
+
+    public int getCodigoDoacao() {
+        return codigoDoacao;
     }
 
-    public void setCodigodoacao(int codigoDoacao) {
-        this.codigodoacao = codigodoacao;
+    public void setCodigoDoacao(int codigoDoacao) {
+        this.codigoDoacao = codigoDoacao;
     }
 
     public String getLocal_doacao() {
@@ -69,5 +72,13 @@ public class Doacao {
     public void setOpcaoDoacao(String opcaoDoacao) {
         this.opcaoDoacao = opcaoDoacao;
     }
-      
+
+    public int getDoador() {
+        return doador;
+    }
+
+    public void setDoador(int doador) {
+        this.doador = doador;
+    }
+
 }

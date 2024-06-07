@@ -43,47 +43,41 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLbOpcao" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="tx11" min="-2" pref="222" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jlbLocal" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="tx8" min="-2" pref="123" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jLbCodigo" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLbData" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="tx9" min="-2" pref="123" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                                  <Component id="jLbHora" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="tx10" min="-2" pref="81" max="-2" attributes="0"/>
-                              <Component id="tx12" min="-2" pref="35" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <EmptySpace min="59" pref="125" max="32767" attributes="0"/>
-              </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="B5" min="-2" pref="128" max="-2" attributes="0"/>
+                  <Component id="B7" min="-2" pref="128" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="lblHoraD" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="tx14" min="-2" pref="81" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="lblTituloD" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lblOpcaoD" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="tx15" min="-2" pref="222" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblLocalD" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="tx12" min="-2" pref="123" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblDataD" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="tx13" min="-2" pref="123" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="189" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -91,29 +85,30 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTituloD" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="tx8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jlbLocal" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLbCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="tx12" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblLocalD" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLbData" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="tx9" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLbHora" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="tx10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblDataD" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tx13" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLbOpcao" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="tx11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblHoraD" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tx14" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="80" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblOpcaoD" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tx15" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="68" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="B5" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
+                      <Component id="B7" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
                       <Component id="jButton1" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
@@ -122,7 +117,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jlbLocal">
+        <Component class="javax.swing.JLabel" name="lblLocalD">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="14" style="0"/>
@@ -130,7 +125,7 @@
             <Property name="text" type="java.lang.String" value="Local:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLbData">
+        <Component class="javax.swing.JLabel" name="lblDataD">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="14" style="0"/>
@@ -138,7 +133,7 @@
             <Property name="text" type="java.lang.String" value="Data:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLbHora">
+        <Component class="javax.swing.JLabel" name="lblHoraD">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="14" style="0"/>
@@ -146,7 +141,7 @@
             <Property name="text" type="java.lang.String" value="Hora:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLbOpcao">
+        <Component class="javax.swing.JLabel" name="lblOpcaoD">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="14" style="0"/>
@@ -154,15 +149,15 @@
             <Property name="text" type="java.lang.String" value="Doa&#xe7;&#xe3;o de:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="tx8">
+        <Component class="javax.swing.JTextField" name="tx12">
         </Component>
-        <Component class="javax.swing.JTextField" name="tx11">
+        <Component class="javax.swing.JTextField" name="tx15">
         </Component>
-        <Component class="javax.swing.JTextField" name="tx10">
+        <Component class="javax.swing.JTextField" name="tx14">
         </Component>
-        <Component class="javax.swing.JTextField" name="tx9">
+        <Component class="javax.swing.JTextField" name="tx13">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="lblTituloD">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="36" style="1"/>
@@ -170,7 +165,7 @@
             <Property name="text" type="java.lang.String" value="Agendar Doa&#xe7;&#xf5;es"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="B5">
+        <Component class="javax.swing.JButton" name="B7">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="14" style="1"/>
@@ -178,18 +173,8 @@
             <Property name="text" type="java.lang.String" value="Agendar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="B5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="B7ActionPerformed"/>
           </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLbCodigo">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Calibri" size="14" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="C&#xf3;digo:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="tx12">
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>

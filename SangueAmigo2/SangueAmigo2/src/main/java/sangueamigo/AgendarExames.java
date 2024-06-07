@@ -1,35 +1,39 @@
+//pacote
 package sangueamigo;
 
 
-public class Exame {
+public class AgendarExames {
     // Encapsulamento de atributos
-      private String codigoExame;
+      private int codigoExame;
       private String local_exame;
       private String data_exame;
       private String hora_exame;
       private String opcaoExame;
+      private int doador;
       
-      public Exame(String codigoExame, String local_exame, String data_exame, String hora_exame, String opcaoExame) {
+      public AgendarExames( int codigoExame, String local_exame, String data_exame, String hora_exame, String opcaoExame, int doador) {
           this.codigoExame = codigoExame;
           this.local_exame = local_exame;
           this.data_exame = data_exame;
           this.hora_exame = hora_exame;
           this.opcaoExame = opcaoExame;
+          this.doador = doador;
       }
-      public Exame (){
-        this.codigoExame = "";
+      public AgendarExames (){
+        this.codigoExame = 0;
         this.local_exame = "";
         this.data_exame = "";
         this.hora_exame = "";
         this.opcaoExame = "";
+        this.doador = 0;
     }
       // GETTERS E SETTERS
-      
-    public String getCodigoExame() {
+
+    public int getCodigoExame() {
         return codigoExame;
     }
 
-    public void setCodigoExame(String codigoExame) {
+    public void setCodigoExame(int codigoExame) {
         this.codigoExame = codigoExame;
     }
 
@@ -64,5 +68,15 @@ public class Exame {
     public void setOpcaoExame(String opcaoExame) {
         this.opcaoExame = opcaoExame;
     }
+
+    public int getDoador() {
+        return doador;
+    }
+
+    public void setDoador(int doador) {
+        this.doador = doador;
+    }
+      
+   
       
 }

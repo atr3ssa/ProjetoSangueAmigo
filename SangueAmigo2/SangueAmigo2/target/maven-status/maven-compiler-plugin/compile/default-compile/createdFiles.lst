@@ -1,8 +1,8 @@
 sangueamigo\ConexaoDB.class
-sangueamigo\Exame.class
 sangueamigo\doacaoDAO.class
 sangueamigo\SangueAmigo2.class
 sangueamigo\UsuarioCadastro$4.class
+sangueamigo\AgendarExames.class
 sangueamigo\exameDAO.class
 sangueamigo\UsuarioPerfil$2.class
 sangueamigo\UsuarioPerfil$4.class
@@ -12,7 +12,7 @@ sangueamigo\UsuarioDoacao$2.class
 sangueamigo\UsuarioDoacao.class
 sangueamigo\UsuarioExame$2.class
 sangueamigo\UsuarioCadastro$2.class
-sangueamigo\Doacao.class
+sangueamigo\AgendarDoacao.class
 sangueamigo\UsuarioCadastro$3.class
 sangueamigo\UsuarioCadastro.class
 sangueamigo\UsuarioDoacao$3.class
@@ -20,7 +20,6 @@ sangueamigo\UsuarioExame.class
 sangueamigo\UsuarioPerfil$1.class
 sangueamigo\UsuarioPerfil.class
 sangueamigo\UsuarioExame$3.class
-sangueamigo\UsuarioExame$4.class
 sangueamigo\UsuarioPerfil$3.class
 sangueamigo\UsuarioDoacao$1.class
 sangueamigo\UsuarioCadastro$1.class

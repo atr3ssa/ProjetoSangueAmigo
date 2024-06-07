@@ -11,7 +11,7 @@ public class ConexaoDB {
     //porta na qual o servidor vai receber as requisições, é padrão
     private static String porta = "3306";
     //nome do banco de dados
-    private static String db = "SangueAmigo";
+    private static String db = "sangue_amigo";
     //usuario do MySQL que uso para entrar
     private static String usuario = "root";
     //senha do MySQL(deixar como: usjt

@@ -1,8 +1,7 @@
 //pacote
 package sangueamigo;
 
-import sangueamigo.ConexaoDB;
-import sangueamigo.Doacao;
+// importações java
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -10,7 +9,7 @@ import javax.swing.JOptionPane;
 
 
 public class doacaoDAO {
-    public void insert(Doacao  doacao) {
+    public void insert(AgendarDoacao  doacao) {
        
        //Com auto increment
       /*String sql =   "INSERT INTO usuario (nome,senha) VALUES ('"
@@ -18,14 +17,12 @@ public class doacaoDAO {
        + usuario.getSenha() + "')";
       */
       
-       String sql =   "INSERT INTO agendardoacao (local_doacao, data_doacao, hora_doacao, opcaoDoacao, codigodoacao) VALUES ('"
+       String sql =   "INSERT INTO agendardoacao (local_doacao, data_doacao, hora_doacao, opcaoDoacao) VALUES ('"
        + doacao.getLocal_doacao() + "','"
        + doacao.getData_doacao() + "','"        
        + doacao.getHora_doacao() + "','"
-       + doacao.getOpcaoDoacao() + "','"      
-       + doacao.getCodigodoacao() + "')" ;
-      
-      
+       + doacao.getOpcaoDoacao() + "')" ;    
+
      
        System.out.println(sql);
         //Usado para tentar mapear o erro do código. Vai tentar executar a conexão com o banco de dados, caso não ocorra, ele vai te informar o erro (podemos detalhar futuramente as possibilidades de erros)

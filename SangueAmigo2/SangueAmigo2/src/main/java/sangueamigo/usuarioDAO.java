@@ -1,11 +1,8 @@
 // pacote
 package sangueamigo;
 // Importações sql
-import sangueamigo.ConexaoDB;
-import sangueamigo.Usuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
@@ -21,15 +18,14 @@ public class usuarioDAO {
        + usuario.getSenha() + "')";
       */
       
-       String sql =   "INSERT INTO usuario (nome_usuario, datadeNascimento, endereco, tipoSanguineo, email_usuario, cpf_usuario, senha_usuario) VALUES ('"
+       String sql =   "INSERT INTO usuario ( nome_usuario, Cpf_usuario, email_usuario, senha_usuario, dataDeNascimento, Cep, tipoSanguineo) VALUES ('"
        + usuario.getNome_usuario() + "','"
-       + usuario.getDatadeNascimento() + "','"        
-       + usuario.getEndereco() + "','"
-       + usuario.getTipoSanguineo() + "','"
-       + usuario.getEmail_usuario() + "','"        
-       + usuario.getCpf_usuario() + "','"       
-       + usuario.getSenha_usuario() + "')" ;
-      
+       + usuario.getCpf_usuario() + "','"  
+       + usuario.getEmail_usuario() + "','" 
+       + usuario.getSenha_usuario() + "','"        
+       + usuario.getDataDeNascimento() + "','"        
+       + usuario.getCep() + "','"
+       + usuario.getTipoSanguineo() + "')" ; 
       
      
        System.out.println(sql);
@@ -52,6 +48,7 @@ public class usuarioDAO {
     }
   
   // Consultar um Usuario
+  /*
     public void consulta(Usuario usuario) {    
         String sql =   "SELECT * from usuario where id=" + usuario.getCodigo();
         System.out.println(sql);
@@ -67,7 +64,8 @@ public class usuarioDAO {
            catch (Exception e){
                e.printStackTrace();
            }      
-     }
+     } 
+*/
 }
   
 
