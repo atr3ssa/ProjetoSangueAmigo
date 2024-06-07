@@ -229,6 +229,7 @@ public class UsuarioExame extends javax.swing.JFrame {
 
     private void B7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B7ActionPerformed
         // TODO add your handling code here:
+       
     }//GEN-LAST:event_B7ActionPerformed
 
     /**
