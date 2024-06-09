@@ -13,7 +13,7 @@ import sangueamigo.AgendarExames;
  * @author DreEm
  */
 public class UsuarioExame extends javax.swing.JFrame {
-    AgendarExames exame = new AgendarExames();
+                AgendarExames agendarexames = new AgendarExames();
                 ConexaoDB conn = new ConexaoDB();  
                 //doacoesDAO = usuario padrao = todos os métodos de CRUD ficam aqui, tudo do banco fica nele
                 //doacao = normal, só os getters e setters
@@ -200,15 +200,15 @@ public class UsuarioExame extends javax.swing.JFrame {
     private void B5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B5ActionPerformed
         //pegando o que foi digitado no Nome do formulario e atualizando
         //padrão mvc
-                            exame.setLocal_exame(tx8.getText());
-                            exame.setData_exame(tx9.getText());
-                            exame.setHora_exame(tx10.getText());
-                            exame.setOpcaoExame(tx11.getText());
+                            agendarexames.setLocal_exame(tx8.getText());
+                            agendarexames.setData_exame(tx9.getText());
+                            agendarexames.setHora_exame(tx10.getText());
+                            agendarexames.setOpcaoExame(tx11.getText());
                             
                             
                            
                             exameBD = new exameDAO();
-                            exameBD.insert(exame);
+                            exameBD.insert(agendarexames);
                             
                             // limpar campos
                             tx8.setText("");
@@ -225,10 +225,40 @@ public class UsuarioExame extends javax.swing.JFrame {
 
     private void B6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B6ActionPerformed
         // TODO add your handling code here:
+                            agendarexames.setLocal_exame(tx8.getText());
+                            agendarexames.setData_exame(tx9.getText());
+                            agendarexames.setHora_exame(tx10.getText());
+                            agendarexames.setOpcaoExame(tx11.getText());
+                            
+                            
+                           
+                            exameBD = new exameDAO();
+                            exameBD.delete(agendarexames);
+                            
+                            // limpar campos
+                            tx8.setText("");
+			    tx9.setText("");
+                            tx10.setText("");
+			    tx11.setText("");   
     }//GEN-LAST:event_B6ActionPerformed
 
     private void B7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B7ActionPerformed
         // TODO add your handling code here:
+            agendarexames.setLocal_exame(tx8.getText());
+                            agendarexames.setData_exame(tx9.getText());
+                            agendarexames.setHora_exame(tx10.getText());
+                            agendarexames.setOpcaoExame(tx11.getText());
+                            
+                            
+                           
+                            exameBD = new exameDAO();
+                            exameBD.consulta(agendarexames);
+                            
+                            // limpar campos
+                            tx8.setText("");
+			    tx9.setText("");
+                            tx10.setText("");
+			    tx11.setText("");    
        
     }//GEN-LAST:event_B7ActionPerformed
 

@@ -125,7 +125,37 @@ public class usuarioDAO {
         }
         return dados;
        }
+     
+     /*
+     public void logar(){
+            String sql = "select * from usuario where email_usuario=? and senha_usuario=?";
+            try{
+                Connection c = ConexaoDB.obtemConexao();
+                PreparedStatement ps = c.prepareStatement(sql);
+
+                ResultSet rs = ps.executeQuery();
+                
+                rs = ps.executeQuery();
+               
+              ps = c.prepareStatement(sql);
+              //ps.setString(1, txtUsuario.getText());
+              //ps.setString(2, txtSenha.getText());
+              
+              //ResultSet rs = ps.executeQuery();
+              
+              if (rs.next()) {  
+                  UsuarioPerfil usuarioperfil = new UsuarioPerfil();
+                  JOptionPane.showMessageDialog(null, "Seja Bem-Vindo!");
+                  usuarioperfil.setVisible(true);                
+              } else {
+                  JOptionPane.showMessageDialog(null,"Email e/ou senha incorreto(s)");
+              }
+            } catch (SQLException e){
+                JOptionPane.showMessageDialog(null, e);
+            }*/
+        }
+
   
-}
+
   
 

@@ -120,6 +120,8 @@ public class usuarioDAO {
             JOptionPane.showMessageDialog(null, e);
         }
         return dados;
-     }}
+     }
+
+}
   
 
