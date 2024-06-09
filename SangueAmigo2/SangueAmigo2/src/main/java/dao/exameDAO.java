@@ -37,17 +37,18 @@ public class exameDAO {
         Connection c = ConexaoDB.obtemConexao();
         PreparedStatement ps = c.prepareStatement(sql);
         ps.execute();
-        JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso");	
+        JOptionPane.showMessageDialog(null, "Exame agendado com sucesso");	
         ps.close();
         c.close();               
 
         //classe usada para tratamentos de erros sql
         } catch (SQLException e) {
-        JOptionPane.showMessageDialog(null, "Erros na Transação");
+        JOptionPane.showMessageDialog(null, "Erros no agendamento");
         //método para imprimir o rastreamento da pilha de chamadas (ajudaa identificar a origem e o contexto do erro
         e.printStackTrace();
        }
     }
+    /*
     //DELETAR
     
     public void delete(String local_usuario, String data_usuario, String hora_usuario, String opcaoExame) {
@@ -66,7 +67,9 @@ public class exameDAO {
              e.printStackTrace();
        }
     }
+*/
     
+ /*
     public void consulta(AgendarExames agendarexames) {    
         String sql =   "SELECT * from usuario where id_usuario=" + agendarexames.getCodigoExame();
         System.out.println(sql);
@@ -88,7 +91,7 @@ public class exameDAO {
                JOptionPane.showMessageDialog(null, "Consulta não realizada");
            }
         
-     }
+     }*/
 }
 
 

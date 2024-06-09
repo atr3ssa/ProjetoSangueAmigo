@@ -4,9 +4,7 @@ package dao;
 import bean.Usuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import conection.ConexaoDB;
 
@@ -39,17 +37,18 @@ public class usuarioDAO {
         Connection c = ConexaoDB.obtemConexao();
         PreparedStatement ps = c.prepareStatement(sql);
         ps.execute();
-        JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso");	
+        JOptionPane.showMessageDialog(null, "Doação agendada com sucesso");	
         ps.close();
         c.close();               
 
         //classe usada para tratamentos de erros sql
         } catch (SQLException e) {
-        JOptionPane.showMessageDialog(null, "Erros na Transação");
+        JOptionPane.showMessageDialog(null, "Erros no agendamento");
         //método para imprimir o rastreamento da pilha de chamadas (ajudaa identificar a origem e o contexto do erro
         e.printStackTrace();
        }
     }
+  
   
    //Alterar um usuario
     public void update(Usuario usuario) {
@@ -68,7 +67,9 @@ public class usuarioDAO {
         e.printStackTrace();
        }
     }
-    //Excluir um usuario
+  
+  
+    //Excluir um usuario (conta)
     public void delete(int usuario) {
        String sql =   "DELETE FROM usuario WHERE id_usuario=" + usuario;
        System.out.println(sql);
@@ -85,6 +86,7 @@ public class usuarioDAO {
              e.printStackTrace();
        }
     }
+    /*
     // Consultar um Usuario
     public void consulta(Usuario usuario) {    
         String sql =   "SELECT * from usuario where id_usuario=" + usuario.getId_usuario();
@@ -102,6 +104,8 @@ public class usuarioDAO {
                e.printStackTrace();
            }      
      }
+    */
+    /*
      public ArrayList listaUsuario(){
         ArrayList<Usuario> dados = new ArrayList();
         String sql = "SELECT * FROM usuario";
@@ -127,7 +131,8 @@ public class usuarioDAO {
         }
         return dados;
        }
-     
+     */
+    
      /*
      public void logar(){
             String sql = "select * from usuario where email_usuario=? and senha_usuario=?";

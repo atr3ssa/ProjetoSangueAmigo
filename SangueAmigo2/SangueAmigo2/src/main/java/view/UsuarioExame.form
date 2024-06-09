@@ -113,11 +113,7 @@
                       </Group>
                   </Group>
                   <EmptySpace pref="29" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="B6" min="-2" pref="128" max="-2" attributes="0"/>
-                      <Component id="B7" min="-2" pref="128" max="-2" attributes="0"/>
-                      <Component id="B5" min="-2" pref="128" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="B5" min="-2" pref="128" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -144,11 +140,7 @@
                       <Component id="lblOpcaoEx" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="tx11" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="B7" min="-2" pref="48" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="B6" min="-2" pref="48" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace pref="132" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="B5" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
                       <Component id="B8" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
@@ -227,28 +219,6 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="B8ActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="B6">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Excluir"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="B6ActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="B7">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Consultar"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="B7ActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

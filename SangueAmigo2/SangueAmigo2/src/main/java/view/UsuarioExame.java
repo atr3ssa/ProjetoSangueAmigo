@@ -48,8 +48,6 @@ public class UsuarioExame extends javax.swing.JFrame {
         tx11 = new javax.swing.JTextField();
         tx10 = new javax.swing.JTextField();
         B8 = new javax.swing.JButton();
-        B6 = new javax.swing.JButton();
-        B7 = new javax.swing.JButton();
 
         jTextField7.setBackground(new java.awt.Color(204, 0, 0));
         jTextField7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
@@ -92,22 +90,6 @@ public class UsuarioExame extends javax.swing.JFrame {
             }
         });
 
-        B6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        B6.setText("Excluir");
-        B6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B6ActionPerformed(evt);
-            }
-        });
-
-        B7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        B7.setText("Consultar");
-        B7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B7ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jQuadroExamesLayout = new javax.swing.GroupLayout(jQuadroExames);
         jQuadroExames.setLayout(jQuadroExamesLayout);
         jQuadroExamesLayout.setHorizontalGroup(
@@ -141,10 +123,7 @@ public class UsuarioExame extends javax.swing.JFrame {
                         .addGap(28, 28, 28)
                         .addComponent(B8, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(B6, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(B7, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(B5, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(B5, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43))
         );
         jQuadroExamesLayout.setVerticalGroup(
@@ -166,11 +145,7 @@ public class UsuarioExame extends javax.swing.JFrame {
                 .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblOpcaoEx)
                     .addComponent(tx11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(B7, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(B6, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                 .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(B5, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(B8, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -223,45 +198,6 @@ public class UsuarioExame extends javax.swing.JFrame {
         new UsuarioPerfil().setVisible(true);
     }//GEN-LAST:event_B8ActionPerformed
 
-    private void B6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B6ActionPerformed
-        // TODO add your handling code here:
-                            /*agendarexames.setLocal_exame(tx8.getText());
-                            agendarexames.setData_exame(tx9.getText());
-                            agendarexames.setHora_exame(tx10.getText());
-                            agendarexames.setOpcaoExame(tx11.getText());
-                            
-                            
-                           
-                            exameBD = new exameDAO();
-                            exameBD.delete(agendarexames);
-                            
-                            // limpar campos
-                            tx8.setText("");
-			    tx9.setText("");
-                            tx10.setText("");
-			    tx11.setText("");   */
-    }//GEN-LAST:event_B6ActionPerformed
-
-    private void B7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B7ActionPerformed
-        // TODO add your handling code here:
-            agendarexames.setLocal_exame(tx8.getText());
-                            agendarexames.setData_exame(tx9.getText());
-                            agendarexames.setHora_exame(tx10.getText());
-                            agendarexames.setOpcaoExame(tx11.getText());
-                            
-                            
-                           
-                            exameBD = new exameDAO();
-                            exameBD.consulta(agendarexames);
-                            
-                            // limpar campos
-                            tx8.setText("");
-			    tx9.setText("");
-                            tx10.setText("");
-			    tx11.setText("");    
-       
-    }//GEN-LAST:event_B7ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -300,8 +236,6 @@ public class UsuarioExame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton B5;
-    private javax.swing.JButton B6;
-    private javax.swing.JButton B7;
     private javax.swing.JButton B8;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jQuadroExames;

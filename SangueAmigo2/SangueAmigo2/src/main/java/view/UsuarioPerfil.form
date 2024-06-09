@@ -159,9 +159,10 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="bconsultar" alignment="0" pref="88" max="32767" attributes="0"/>
+                          <Component id="bconsultar" alignment="0" max="32767" attributes="0"/>
+                          <Component id="bconsulta1" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="bconsulta" min="-2" max="-2" attributes="0"/>
+                              <Component id="bupdate" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -173,8 +174,10 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="bconsulta" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="bupdate" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="bconsulta1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="bconsultar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
@@ -190,12 +193,20 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bconsultarActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="bconsulta">
+            <Component class="javax.swing.JButton" name="bconsulta1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Consultar"/>
+                <Property name="text" type="java.lang.String" value="Excluir"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bconsultaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bconsulta1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="bupdate">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Editar Perfil"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bupdateActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

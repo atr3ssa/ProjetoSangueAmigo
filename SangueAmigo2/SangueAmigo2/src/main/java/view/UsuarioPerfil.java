@@ -4,6 +4,10 @@
  */
 package view;
 
+import bean.Usuario;
+import conection.ConexaoDB;
+import dao.usuarioDAO;
+
 
 
 
@@ -13,7 +17,7 @@ package view;
  * @author DreEm
  */
 public class UsuarioPerfil extends javax.swing.JFrame {
-        
+      
              
                
     /**
@@ -37,7 +41,8 @@ public class UsuarioPerfil extends javax.swing.JFrame {
         B4 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         bconsultar = new javax.swing.JButton();
-        bconsulta = new javax.swing.JButton();
+        bconsulta1 = new javax.swing.JButton();
+        bupdate = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 0, 0));
@@ -79,10 +84,17 @@ public class UsuarioPerfil extends javax.swing.JFrame {
             }
         });
 
-        bconsulta.setText("Consultar");
-        bconsulta.addActionListener(new java.awt.event.ActionListener() {
+        bconsulta1.setText("Excluir");
+        bconsulta1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bconsultaActionPerformed(evt);
+                bconsulta1ActionPerformed(evt);
+            }
+        });
+
+        bupdate.setText("Editar Perfil");
+        bupdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bupdateActionPerformed(evt);
             }
         });
 
@@ -93,9 +105,10 @@ public class UsuarioPerfil extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(bconsultar, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
+                    .addComponent(bconsultar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bconsulta1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(bconsulta)
+                        .addComponent(bupdate)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -103,8 +116,10 @@ public class UsuarioPerfil extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(bconsulta)
-                .addGap(38, 38, 38)
+                .addComponent(bupdate)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(bconsulta1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(bconsultar)
                 .addGap(24, 24, 24))
         );
@@ -170,11 +185,16 @@ public class UsuarioPerfil extends javax.swing.JFrame {
 			    
     }//GEN-LAST:event_bconsultarActionPerformed
 
-    private void bconsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bconsultaActionPerformed
+    private void bconsulta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bconsulta1ActionPerformed
         // TODO add your handling code here:
-                
+    }//GEN-LAST:event_bconsulta1ActionPerformed
+
+    private void bupdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bupdateActionPerformed
+        // TODO add your handling code here:
+        new UsuarioEditarPerfil().setVisible(true);
         
-    }//GEN-LAST:event_bconsultaActionPerformed
+        
+    }//GEN-LAST:event_bupdateActionPerformed
 
     /**
      * @param args the command line arguments
@@ -215,8 +235,9 @@ public class UsuarioPerfil extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton B3;
     private javax.swing.JButton B4;
-    private javax.swing.JButton bconsulta;
+    private javax.swing.JButton bconsulta1;
     private javax.swing.JButton bconsultar;
+    private javax.swing.JButton bupdate;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
