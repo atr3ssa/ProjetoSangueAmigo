@@ -27,7 +27,7 @@ public class UsuarioLogin extends javax.swing.JFrame {
                 ResultSet rs = null;
                 
                 public UsuarioLogin(){
-                    Connection c = ConexaoDB.obtemConexao();
+                    Connection conectar = ConexaoDB.obtemConexao();
                 }
         
         public void logar(){
