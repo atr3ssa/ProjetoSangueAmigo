@@ -17,10 +17,11 @@ view\UsuarioEditarPerfil$4.class
 view\UsuarioExame.class
 view\UsuarioLogin$2.class
 dao\exameDAO.class
-bean\AgendarDoacao.class
 view\UsuarioCadastro$4.class
 view\UsuarioCadastro$1.class
+model\AgendarExames.class
 view\UsuarioCadastro.class
+model\Usuario.class
 view\UsuarioPerfil$1.class
 view\UsuarioCadastro$5.class
 view\UsuarioEditarPerfil$3.class
@@ -28,11 +29,10 @@ view\UsuarioPerfil$4.class
 view\UsuarioEditarPerfil.class
 view\UsuarioExame$3.class
 view\UsuarioCadastro$2.class
+model\AgendarDoacao.class
 view\UsuarioPerfil$2.class
 view\UsuarioDoacao$3.class
 view\UsuarioEditarPerfil$2.class
 view\UsuarioExame$2.class
 view\UsuarioLogin$1.class
 view\UsuarioPerfil$5.class
-bean\AgendarExames.class
-bean\Usuario.class

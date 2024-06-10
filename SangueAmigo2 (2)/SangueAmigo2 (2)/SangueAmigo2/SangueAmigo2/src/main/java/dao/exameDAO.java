@@ -3,7 +3,7 @@ package dao;
 
 //importaçoes java
 
-import bean.AgendarExames;
+import model.AgendarExames;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

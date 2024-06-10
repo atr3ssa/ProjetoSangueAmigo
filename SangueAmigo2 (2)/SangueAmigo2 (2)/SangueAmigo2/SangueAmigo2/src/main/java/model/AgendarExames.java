@@ -1,5 +1,5 @@
 //pacote
-package bean;
+package model;
 
 
 public class AgendarExames {

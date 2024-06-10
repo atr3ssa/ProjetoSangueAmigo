@@ -1,7 +1,7 @@
 // pacote
 package dao;
 // Importações sql
-import bean.Usuario;
+import model.Usuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

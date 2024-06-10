@@ -2,7 +2,7 @@
 package dao;
 
 // importações java
-import bean.AgendarDoacao;
+import model.AgendarDoacao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

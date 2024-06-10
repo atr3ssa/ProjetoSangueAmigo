@@ -4,7 +4,7 @@
  */
 package view;
 
-import bean.Usuario;
+import model.Usuario;
 import conection.ConexaoDB;
 import dao.usuarioDAO;
 
@@ -215,7 +215,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                                     .addComponent(lblSenha)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(tx4, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(51, 51, Short.MAX_VALUE))
+                .addGap(59, 59, Short.MAX_VALUE))
             .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addComponent(B2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -256,7 +256,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tx7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTSanguineo))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(B1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(B2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -268,23 +268,23 @@ public class UsuarioCadastro extends javax.swing.JFrame {
 
         lblSistema.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
         lblSistema.setForeground(new java.awt.Color(255, 153, 102));
-        lblSistema.setText("Sangue Amigo");
+        lblSistema.setText("SangueAmigo");
 
         javax.swing.GroupLayout jQuadrovermelho1Layout = new javax.swing.GroupLayout(jQuadrovermelho1);
         jQuadrovermelho1.setLayout(jQuadrovermelho1Layout);
         jQuadrovermelho1Layout.setHorizontalGroup(
             jQuadrovermelho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jQuadrovermelho1Layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
+                .addGap(15, 15, 15)
                 .addComponent(lblSistema)
-                .addContainerGap())
+                .addContainerGap(16, Short.MAX_VALUE))
         );
         jQuadrovermelho1Layout.setVerticalGroup(
             jQuadrovermelho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jQuadrovermelho1Layout.createSequentialGroup()
-                .addGap(203, 203, 203)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jQuadrovermelho1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblSistema)
-                .addContainerGap(249, Short.MAX_VALUE))
+                .addGap(217, 217, 217))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -293,7 +293,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jQuadrovermelho1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(JQuadroVermelho2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

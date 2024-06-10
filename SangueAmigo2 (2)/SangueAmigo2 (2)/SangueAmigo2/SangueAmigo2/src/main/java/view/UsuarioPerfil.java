@@ -4,7 +4,7 @@
  */
 package view;
 
-import bean.Usuario;
+import model.Usuario;
 import conection.ConexaoDB;
 import dao.usuarioDAO;
 
