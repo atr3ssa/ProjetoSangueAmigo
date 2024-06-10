@@ -183,16 +183,19 @@ public class UsuarioPerfil extends javax.swing.JFrame {
     private void B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B3ActionPerformed
         // TODO add your handling code here:
         new UsuarioExame().setVisible(true);
+        dispose();
     }//GEN-LAST:event_B3ActionPerformed
 
     private void B4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B4ActionPerformed
         // TODO add your handling code here:
         new UsuarioDoacao().setVisible(true);
+        dispose();
     }//GEN-LAST:event_B4ActionPerformed
 
     private void B5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B5ActionPerformed
         // TODO add your handling code here:
         new UsuarioLogin().setVisible(true);
+        dispose();
           
                             
 			    
@@ -229,6 +232,7 @@ public class UsuarioPerfil extends javax.swing.JFrame {
     private void B7UpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B7UpdateActionPerformed
         // TODO add your handling code here:
         new UsuarioEditarPerfil().setVisible(true);
+        dispose();
         
         
     }//GEN-LAST:event_B7UpdateActionPerformed

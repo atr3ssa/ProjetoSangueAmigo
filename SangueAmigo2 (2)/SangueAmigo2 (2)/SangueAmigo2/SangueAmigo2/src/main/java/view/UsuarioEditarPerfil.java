@@ -282,11 +282,13 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         tx22.setText("");
 
         new UsuarioPerfil().setVisible(true);
+        dispose();
     }//GEN-LAST:event_B14UpdatejButton5ActionPerformed
 
     private void B15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B15ActionPerformed
         // TODO add your handling code here:
         new UsuarioPerfil().setVisible(true);
+        dispose();
     }//GEN-LAST:event_B15ActionPerformed
 
     /**

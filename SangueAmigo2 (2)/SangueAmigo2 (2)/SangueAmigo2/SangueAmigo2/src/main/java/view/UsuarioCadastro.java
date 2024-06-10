@@ -335,7 +335,8 @@ public class UsuarioCadastro extends javax.swing.JFrame {
 			    tx6.setText(""); 
                             tx7.setText(""); 
                             
-                     new UsuarioLogin().setVisible(true);      
+                     new UsuarioLogin().setVisible(true);
+                     dispose();
                             
                             
     }//GEN-LAST:event_jButton5ActionPerformed
@@ -347,6 +348,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
     private void B2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B2ActionPerformed
         // TODO add your handling code here:
          new UsuarioLogin().setVisible(true);
+         dispose();
     }//GEN-LAST:event_B2ActionPerformed
 
     private void tx1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx1ActionPerformed

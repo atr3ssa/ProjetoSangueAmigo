@@ -44,6 +44,7 @@ public class UsuarioLogin extends javax.swing.JFrame {
                   UsuarioPerfil usuarioperfil = new UsuarioPerfil();
                   JOptionPane.showMessageDialog(null, "Seja Bem-Vindo!");
                   new UsuarioPerfil().setVisible(true);
+                  dispose();
                                
               } else {
                   JOptionPane.showMessageDialog(null,"Email e/ou senha incorreto(s)");
@@ -264,7 +265,9 @@ public class UsuarioLogin extends javax.swing.JFrame {
 
     private void B16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B16ActionPerformed
         // TODO add your handling code here:
+        
         new UsuarioCadastro().setVisible(true);
+        dispose();
         
     }//GEN-LAST:event_B16ActionPerformed
 

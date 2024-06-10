@@ -7,6 +7,7 @@ package view;
 import model.AgendarExames;
 import conection.ConexaoDB;
 import dao.exameDAO;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -286,6 +287,7 @@ public class UsuarioExame extends javax.swing.JFrame {
     private void B9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B9ActionPerformed
         // TODO add your handling code here:
         new UsuarioPerfil().setVisible(true);
+        dispose();
     }//GEN-LAST:event_B9ActionPerformed
 
     /**
