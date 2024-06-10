@@ -37,13 +37,13 @@ public class usuarioDAO {
         Connection c = ConexaoDB.obtemConexao();
         PreparedStatement ps = c.prepareStatement(sql);
         ps.execute();
-        JOptionPane.showMessageDialog(null, "Doação agendada com sucesso");	
+        JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");	
         ps.close();
         c.close();               
 
         //classe usada para tratamentos de erros sql
         } catch (SQLException e) {
-        JOptionPane.showMessageDialog(null, "Erros no agendamento");
+        JOptionPane.showMessageDialog(null, "Erros na transação");
         //método para imprimir o rastreamento da pilha de chamadas (ajudaa identificar a origem e o contexto do erro
         e.printStackTrace();
        }

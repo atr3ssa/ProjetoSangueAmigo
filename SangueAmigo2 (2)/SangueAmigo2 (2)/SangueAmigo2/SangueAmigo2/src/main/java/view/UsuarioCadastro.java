@@ -335,7 +335,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
 			    tx6.setText(""); 
                             tx7.setText(""); 
                             
-                     new UsuarioPerfil().setVisible(true);      
+                     new UsuarioLogin().setVisible(true);      
                             
                             
     }//GEN-LAST:event_jButton5ActionPerformed
