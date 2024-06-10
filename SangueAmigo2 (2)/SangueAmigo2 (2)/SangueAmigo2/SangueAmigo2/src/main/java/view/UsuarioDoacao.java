@@ -52,33 +52,44 @@ public class UsuarioDoacao extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jQuadroDoacao.setBackground(new java.awt.Color(204, 0, 0));
+        jQuadroDoacao.setBackground(new java.awt.Color(255, 153, 102));
 
         lblLocalD.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lblLocalD.setForeground(new java.awt.Color(204, 0, 0));
         lblLocalD.setText("Local:");
 
         lblDataD.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lblDataD.setForeground(new java.awt.Color(204, 0, 0));
         lblDataD.setText("Data:");
 
         lblHoraD.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lblHoraD.setForeground(new java.awt.Color(204, 0, 0));
         lblHoraD.setText("Hora:");
 
         lblOpcaoD.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lblOpcaoD.setForeground(new java.awt.Color(204, 0, 0));
         lblOpcaoD.setText("Doação de:");
 
         lblTituloD.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        lblTituloD.setForeground(new java.awt.Color(204, 0, 0));
         lblTituloD.setText("Agendar Doações");
 
+        B10.setBackground(new java.awt.Color(204, 0, 0));
         B10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        B10.setForeground(new java.awt.Color(255, 255, 255));
         B10.setText("Agendar");
+        B10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         B10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 B10ActionPerformed(evt);
             }
         });
 
+        B11.setBackground(new java.awt.Color(204, 0, 0));
         B11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        B11.setForeground(new java.awt.Color(255, 255, 255));
         B11.setText("Voltar");
+        B11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         B11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 B11ActionPerformed(evt);
@@ -90,37 +101,34 @@ public class UsuarioDoacao extends javax.swing.JFrame {
         jQuadroDoacaoLayout.setHorizontalGroup(
             jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jQuadroDoacaoLayout.createSequentialGroup()
+                .addGap(59, 59, 59)
                 .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblTituloD)
-                            .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
-                                    .addComponent(lblLocalD)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(tx12))
-                                .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
-                                    .addComponent(lblDataD)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(tx13, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(lblHoraD)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(tx14, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(B11, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(B10, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jQuadroDoacaoLayout.createSequentialGroup()
-                        .addGap(53, 53, 53)
+                    .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lblTituloD)
+                        .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                                .addComponent(lblLocalD)
+                                .addGap(18, 18, 18)
+                                .addComponent(tx12))
+                            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                                .addComponent(lblDataD)
+                                .addGap(18, 18, 18)
+                                .addComponent(tx13, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblHoraD)
+                                .addGap(18, 18, 18)
+                                .addComponent(tx14, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
                         .addComponent(lblOpcaoD)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tx15, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 226, Short.MAX_VALUE)))
-                .addGap(19, 19, 19))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tx15, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(19, 162, Short.MAX_VALUE))
+            .addGroup(jQuadroDoacaoLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(B11, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(B10, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41))
         );
         jQuadroDoacaoLayout.setVerticalGroup(
             jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,9 +150,9 @@ public class UsuarioDoacao extends javax.swing.JFrame {
                     .addComponent(lblOpcaoD)
                     .addComponent(tx15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
-                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(B11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(B10, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
+                .addGroup(jQuadroDoacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(B11, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(B10, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27))
         );
 
