@@ -1,8 +1,8 @@
 //pacote
-package dao;
+package model.dao;
 
 // importações java
-import model.AgendarDoacao;
+import model.bean.AgendarDoacao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

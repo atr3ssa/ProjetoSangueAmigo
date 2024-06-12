@@ -49,6 +49,8 @@ show tables;
 describe usuario;
 select* from usuario;
 
+UPDATE  usuario SET nome_usuario="Ramon",senha_usuario="" WHERE id_usuario=0;
+
 -- AgendarExames
 
 describe agendarexames;
@@ -60,5 +62,5 @@ select* from agendarexames;
 describe agendardoacao;
 select* from agendarexames;
 
-
+select * from usuario where email_usuario="dre.emy89@gmail.com" and senha_usuario="usjt";
 

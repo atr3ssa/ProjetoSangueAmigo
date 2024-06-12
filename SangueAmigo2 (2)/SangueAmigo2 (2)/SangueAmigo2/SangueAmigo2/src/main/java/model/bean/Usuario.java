@@ -1,5 +1,5 @@
 //pacote
-package model;
+package model.bean;
 
 
 public class Usuario {

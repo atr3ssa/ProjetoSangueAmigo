@@ -1,9 +1,9 @@
 // pacote
-package dao;
+package model.dao;
 
 //importaçoes java
 
-import model.AgendarExames;
+import model.bean.AgendarExames;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

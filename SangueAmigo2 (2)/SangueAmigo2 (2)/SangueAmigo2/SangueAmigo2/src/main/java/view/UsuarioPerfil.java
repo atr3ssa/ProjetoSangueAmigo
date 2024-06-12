@@ -4,9 +4,9 @@
  */
 package view;
 
-import model.Usuario;
+import model.bean.Usuario;
 import conection.ConexaoDB;
-import dao.usuarioDAO;
+import model.dao.usuarioDAO;
 
 
 
@@ -45,7 +45,6 @@ public class UsuarioPerfil extends javax.swing.JFrame {
         B4 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         B5 = new javax.swing.JButton();
-        B6Excluir = new javax.swing.JButton();
         B7Update = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -91,16 +90,6 @@ public class UsuarioPerfil extends javax.swing.JFrame {
             }
         });
 
-        B6Excluir.setBackground(new java.awt.Color(255, 204, 153));
-        B6Excluir.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        B6Excluir.setForeground(new java.awt.Color(204, 0, 0));
-        B6Excluir.setText("Excluir");
-        B6Excluir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B6ExcluirActionPerformed(evt);
-            }
-        });
-
         B7Update.setBackground(new java.awt.Color(255, 204, 153));
         B7Update.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         B7Update.setForeground(new java.awt.Color(204, 0, 0));
@@ -119,7 +108,6 @@ public class UsuarioPerfil extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(B5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(B6Excluir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(B7Update)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -130,9 +118,7 @@ public class UsuarioPerfil extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(B7Update, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(B6Excluir, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(B5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24))
         );
@@ -148,7 +134,7 @@ public class UsuarioPerfil extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42)
                 .addComponent(B4, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,34 +187,6 @@ public class UsuarioPerfil extends javax.swing.JFrame {
 			    
     }//GEN-LAST:event_B5ActionPerformed
 
-    private void B6ExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B6ExcluirActionPerformed
-        // TODO add your handling code here:
-        /*                   
-        usuario.setNome_usuario(tx1getText());
-                            usuario.setCpf_usuario(tx2.getText());
-                            usuario.setEmail_usuario (tx3.getText());
-                            usuario.setSenha_usuario(tx4.getText());
-                            usuario.setDataDeNascimento(tx5.getText());
-                            usuario.setCep (tx6.getText());
-                            usuario.setTipoSanguineo(tx7.getText());
-                            */
-                                                 
-                            usuarioBD = new usuarioDAO();
-                            usuarioBD.delete(usuario);
-                            
-                            /* limpar campos
-                            tx1.setText("");
-			    tx2.setText("");
-			    tx3.setText("");    
-                            tx4.setText("");
-			    tx5.setText("");
-			    tx6.setText(""); 
-                            tx7.setText(""); */
-                            
-        //new UsuarioExcluir().setVisible(true);
-        
-    }//GEN-LAST:event_B6ExcluirActionPerformed
-
     private void B7UpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B7UpdateActionPerformed
         // TODO add your handling code here:
         new UsuarioEditarPerfil().setVisible(true);
@@ -277,7 +235,6 @@ public class UsuarioPerfil extends javax.swing.JFrame {
     private javax.swing.JButton B3;
     private javax.swing.JButton B4;
     private javax.swing.JButton B5;
-    private javax.swing.JButton B6Excluir;
     private javax.swing.JButton B7Update;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

@@ -4,9 +4,9 @@
  */
 package view;
 
-import model.AgendarDoacao;
+import model.bean.AgendarDoacao;
 import conection.ConexaoDB;
-import dao.doacaoDAO;
+import model.dao.doacaoDAO;
 
 
 

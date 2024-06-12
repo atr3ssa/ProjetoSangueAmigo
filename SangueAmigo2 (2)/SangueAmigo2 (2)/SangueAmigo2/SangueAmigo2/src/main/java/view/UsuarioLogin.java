@@ -4,14 +4,14 @@
  */
 package view;
 
-import model.Usuario;
+import model.bean.Usuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import conection.ConexaoDB;
-import dao.usuarioDAO;
+import model.dao.usuarioDAO;
 
 /**
  *

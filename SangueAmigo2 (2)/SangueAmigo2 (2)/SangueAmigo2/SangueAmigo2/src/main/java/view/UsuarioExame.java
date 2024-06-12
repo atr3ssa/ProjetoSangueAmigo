@@ -4,9 +4,9 @@
  */
 package view;
 
-import model.AgendarExames;
+import model.bean.AgendarExames;
 import conection.ConexaoDB;
-import dao.exameDAO;
+import model.dao.exameDAO;
 import javax.swing.JOptionPane;
 
 /**
