@@ -58,7 +58,7 @@ public class UsuarioHome extends javax.swing.JFrame {
         B3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         B3.setForeground(new java.awt.Color(153, 0, 0));
         B3.setText("Agendar Exames");
-        B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         B3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 B3ActionPerformed(evt);
@@ -68,7 +68,7 @@ public class UsuarioHome extends javax.swing.JFrame {
         B4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         B4.setForeground(new java.awt.Color(153, 0, 0));
         B4.setText("Marcar Doações");
-        B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         B4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 B4ActionPerformed(evt);
@@ -83,6 +83,7 @@ public class UsuarioHome extends javax.swing.JFrame {
         B5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         B5.setForeground(new java.awt.Color(255, 255, 255));
         B5.setText("Sair");
+        B5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         B5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 B5ActionPerformed(evt);
@@ -93,6 +94,7 @@ public class UsuarioHome extends javax.swing.JFrame {
         B7Update.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         B7Update.setForeground(new java.awt.Color(255, 255, 255));
         B7Update.setText("Editar Perfil");
+        B7Update.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         B7Update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 B7UpdateActionPerformed(evt);

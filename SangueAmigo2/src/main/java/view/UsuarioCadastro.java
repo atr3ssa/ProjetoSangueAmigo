@@ -104,35 +104,34 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
 
-        JQuadroVermelho2.setBackground(new java.awt.Color(255, 255, 255));
+        JQuadroVermelho2.setBackground(new java.awt.Color(153, 0, 0));
         JQuadroVermelho2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         JQuadroVermelho2.setForeground(new java.awt.Color(102, 0, 0));
 
         lblNome.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lblNome.setForeground(new java.awt.Color(204, 0, 0));
+        lblNome.setForeground(new java.awt.Color(255, 255, 255));
         lblNome.setText("Nome:");
 
         jblTituloCadastro2.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
-        jblTituloCadastro2.setForeground(new java.awt.Color(204, 0, 0));
+        jblTituloCadastro2.setForeground(new java.awt.Color(255, 255, 255));
         jblTituloCadastro2.setText("Cadastro");
 
         lblSenha.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lblSenha.setForeground(new java.awt.Color(204, 0, 0));
+        lblSenha.setForeground(new java.awt.Color(255, 255, 255));
         lblSenha.setText("Senha:");
 
         lblEmail.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lblEmail.setForeground(new java.awt.Color(204, 0, 0));
+        lblEmail.setForeground(new java.awt.Color(255, 255, 255));
         lblEmail.setText("Email:");
 
         lblCPF.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lblCPF.setForeground(new java.awt.Color(204, 0, 0));
+        lblCPF.setForeground(new java.awt.Color(255, 255, 255));
         lblCPF.setText("CPF:");
 
-        B1.setBackground(new java.awt.Color(204, 0, 0));
         B1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        B1.setForeground(new java.awt.Color(255, 255, 255));
+        B1.setForeground(new java.awt.Color(153, 0, 0));
         B1.setText("Cadastrar");
-        B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         B1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -151,11 +150,10 @@ public class UsuarioCadastro extends javax.swing.JFrame {
             }
         });
 
-        B2.setBackground(new java.awt.Color(204, 0, 0));
         B2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        B2.setForeground(new java.awt.Color(255, 255, 255));
+        B2.setForeground(new java.awt.Color(153, 0, 0));
         B2.setText("Acessar Login");
-        B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         B2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 B2ActionPerformed(evt);
@@ -163,15 +161,15 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         });
 
         lblDNascimento.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lblDNascimento.setForeground(new java.awt.Color(204, 0, 0));
+        lblDNascimento.setForeground(new java.awt.Color(255, 255, 255));
         lblDNascimento.setText("Data De Nascimento:");
 
         lblCEP.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lblCEP.setForeground(new java.awt.Color(204, 0, 0));
+        lblCEP.setForeground(new java.awt.Color(255, 255, 255));
         lblCEP.setText("CEP:");
 
         lblTSanguineo.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        lblTSanguineo.setForeground(new java.awt.Color(204, 0, 0));
+        lblTSanguineo.setForeground(new java.awt.Color(255, 255, 255));
         lblTSanguineo.setText("Tipo sanguíneo:");
 
         javax.swing.GroupLayout JQuadroVermelho2Layout = new javax.swing.GroupLayout(JQuadroVermelho2);
@@ -214,14 +212,13 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                                 .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                                     .addComponent(lblSenha)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(tx4, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(69, 69, Short.MAX_VALUE))
-            .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(B2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(B1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26))
+                                    .addComponent(tx4, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(B2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(127, 127, 127)
+                        .addComponent(B1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         JQuadroVermelho2Layout.setVerticalGroup(
             JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -263,28 +260,29 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
         );
 
-        jQuadrovermelho1.setBackground(new java.awt.Color(204, 0, 0));
+        jQuadrovermelho1.setBackground(new java.awt.Color(255, 255, 255));
         jQuadrovermelho1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jQuadrovermelho1.setForeground(new java.awt.Color(153, 0, 0));
 
         lblSistema.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
         lblSistema.setForeground(new java.awt.Color(255, 153, 102));
-        lblSistema.setText("SangueAmigo");
+        lblSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sangueazul.png"))); // NOI18N
 
         javax.swing.GroupLayout jQuadrovermelho1Layout = new javax.swing.GroupLayout(jQuadrovermelho1);
         jQuadrovermelho1.setLayout(jQuadrovermelho1Layout);
         jQuadrovermelho1Layout.setHorizontalGroup(
             jQuadrovermelho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jQuadrovermelho1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(16, 16, 16)
                 .addComponent(lblSistema)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         jQuadrovermelho1Layout.setVerticalGroup(
             jQuadrovermelho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jQuadrovermelho1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jQuadrovermelho1Layout.createSequentialGroup()
+                .addGap(167, 167, 167)
                 .addComponent(lblSistema)
-                .addGap(217, 217, 217))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -292,14 +290,14 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jQuadrovermelho1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jQuadrovermelho1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JQuadroVermelho2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(JQuadroVermelho2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jQuadrovermelho1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(JQuadroVermelho2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(JQuadroVermelho2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
