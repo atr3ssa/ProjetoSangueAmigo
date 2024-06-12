@@ -60,7 +60,7 @@ select* from agendarexames;
 -- AgendarDoacao
 
 describe agendardoacao;
-select* from agendarexames;
+select* from agendardoacao;
 
 select * from usuario where email_usuario="dre.emy89@gmail.com" and senha_usuario="usjt";
 
