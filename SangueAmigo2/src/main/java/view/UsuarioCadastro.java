@@ -46,7 +46,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         tx1 = new javax.swing.JTextField();
         tx2 = new javax.swing.JTextField();
         tx3 = new javax.swing.JTextField();
-        tx4 = new javax.swing.JTextField();
+        tx4 = new javax.swing.JPasswordField();
         tx5 = new javax.swing.JTextField();
         tx7 = new javax.swing.JTextField();
         tx6 = new javax.swing.JTextField();
@@ -81,7 +81,6 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         tx1 = new javax.swing.JTextField();
         tx2 = new javax.swing.JTextField();
         tx3 = new javax.swing.JTextField();
-        tx4 = new javax.swing.JTextField();
         tx5 = new javax.swing.JTextField();
         tx7 = new javax.swing.JTextField();
         tx6 = new javax.swing.JTextField();
@@ -89,6 +88,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         lblDNascimento = new javax.swing.JLabel();
         lblCEP = new javax.swing.JLabel();
         lblTSanguineo = new javax.swing.JLabel();
+        tx4 = new javax.swing.JPasswordField();
         jQuadrovermelho1 = new javax.swing.JPanel();
         lblSistema = new javax.swing.JLabel();
 
@@ -208,11 +208,11 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                                 .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                                     .addComponent(lblDNascimento)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(tx5))
+                                    .addComponent(tx5, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE))
                                 .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                                     .addComponent(lblSenha)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(tx4, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addGap(18, 18, 18)
+                                    .addComponent(tx4)))))
                     .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addComponent(B2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -239,8 +239,8 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                     .addComponent(lblEmail))
                 .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tx4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblSenha))
+                    .addComponent(lblSenha)
+                    .addComponent(tx4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tx5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -411,7 +411,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
     private javax.swing.JTextField tx1;
     private javax.swing.JTextField tx2;
     private javax.swing.JTextField tx3;
-    private javax.swing.JTextField tx4;
+    private javax.swing.JPasswordField tx4;
     private javax.swing.JTextField tx5;
     private javax.swing.JTextField tx6;
     private javax.swing.JTextField tx7;

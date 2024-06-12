@@ -112,8 +112,6 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             }
         });
 
-        tx18.setText("jPasswordField1");
-
         javax.swing.GroupLayout JQuadroVermelho2Layout = new javax.swing.GroupLayout(JQuadroVermelho2);
         JQuadroVermelho2.setLayout(JQuadroVermelho2Layout);
         JQuadroVermelho2Layout.setHorizontalGroup(
