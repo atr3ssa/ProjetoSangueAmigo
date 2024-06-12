@@ -47,6 +47,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         B15 = new javax.swing.JButton();
         B14Update1 = new javax.swing.JButton();
         tx18 = new javax.swing.JPasswordField();
+        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -79,7 +80,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             }
         });
 
-        B14Update.setBackground(new java.awt.Color(204, 0, 0));
+        B14Update.setBackground(new java.awt.Color(153, 0, 0));
         B14Update.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         B14Update.setForeground(new java.awt.Color(255, 255, 255));
         B14Update.setText("Atualizar dados");
@@ -90,7 +91,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             }
         });
 
-        B15.setBackground(new java.awt.Color(204, 0, 0));
+        B15.setBackground(new java.awt.Color(153, 0, 0));
         B15.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         B15.setForeground(new java.awt.Color(255, 255, 255));
         B15.setText("Voltar");
@@ -101,7 +102,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             }
         });
 
-        B14Update1.setBackground(new java.awt.Color(204, 0, 0));
+        B14Update1.setBackground(new java.awt.Color(153, 0, 0));
         B14Update1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         B14Update1.setForeground(new java.awt.Color(255, 255, 255));
         B14Update1.setText("Excluir dados");
@@ -112,15 +113,25 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             }
         });
 
+        jPanel2.setBackground(new java.awt.Color(153, 0, 0));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 160, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout JQuadroVermelho2Layout = new javax.swing.GroupLayout(JQuadroVermelho2);
         JQuadroVermelho2.setLayout(JQuadroVermelho2Layout);
         JQuadroVermelho2Layout.setHorizontalGroup(
             JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jblTituloCadastro2))
                     .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -144,8 +155,12 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
                                         .addComponent(tx16, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
                                         .addComponent(tx17))
                                     .addComponent(tx18, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(50, 50, 50)))))
-                .addContainerGap(27, Short.MAX_VALUE))
+                                .addGap(50, 50, 50))))
+                    .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jblTituloCadastro2)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         JQuadroVermelho2Layout.setVerticalGroup(
             JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -170,6 +185,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
                     .addComponent(B14Update, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(B14Update1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -295,6 +311,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
     private javax.swing.JButton B15;
     private javax.swing.JPanel JQuadroVermelho2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel jblTituloCadastro2;
     private javax.swing.JLabel lbl16;
     private javax.swing.JLabel lbl17;
