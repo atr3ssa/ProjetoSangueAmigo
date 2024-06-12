@@ -104,7 +104,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
 
-        JQuadroVermelho2.setBackground(new java.awt.Color(255, 153, 102));
+        JQuadroVermelho2.setBackground(new java.awt.Color(255, 255, 255));
         JQuadroVermelho2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         JQuadroVermelho2.setForeground(new java.awt.Color(102, 0, 0));
 
@@ -215,7 +215,7 @@ public class UsuarioCadastro extends javax.swing.JFrame {
                                     .addComponent(lblSenha)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(tx4, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(59, 59, Short.MAX_VALUE))
+                .addGap(69, 69, Short.MAX_VALUE))
             .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addComponent(B2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -275,9 +275,9 @@ public class UsuarioCadastro extends javax.swing.JFrame {
         jQuadrovermelho1Layout.setHorizontalGroup(
             jQuadrovermelho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jQuadrovermelho1Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
+                .addContainerGap()
                 .addComponent(lblSistema)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         jQuadrovermelho1Layout.setVerticalGroup(
             jQuadrovermelho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

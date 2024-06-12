@@ -66,7 +66,7 @@ public class UsuarioExame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jQuadroExames.setBackground(new java.awt.Color(255, 153, 102));
+        jQuadroExames.setBackground(new java.awt.Color(255, 255, 255));
 
         lblLocalEx.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblLocalEx.setForeground(new java.awt.Color(204, 0, 0));
@@ -286,7 +286,7 @@ public class UsuarioExame extends javax.swing.JFrame {
 
     private void B9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B9ActionPerformed
         // TODO add your handling code here:
-        new UsuarioPerfil().setVisible(true);
+        new UsuarioHome().setVisible(true);
         dispose();
     }//GEN-LAST:event_B9ActionPerformed
 

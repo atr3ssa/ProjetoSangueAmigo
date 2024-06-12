@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-import view.UsuarioPerfil;
+import view.UsuarioHome;
 
 //Integração do Banco com o Netbeans
 public class ConexaoDB {

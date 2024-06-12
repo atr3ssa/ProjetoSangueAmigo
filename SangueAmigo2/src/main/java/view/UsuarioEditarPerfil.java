@@ -53,7 +53,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 0, 0));
         jPanel1.setForeground(new java.awt.Color(153, 0, 0));
 
-        JQuadroVermelho2.setBackground(new java.awt.Color(255, 153, 102));
+        JQuadroVermelho2.setBackground(new java.awt.Color(255, 255, 255));
         JQuadroVermelho2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         JQuadroVermelho2.setForeground(new java.awt.Color(102, 0, 0));
 
@@ -227,13 +227,13 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         tx17.setText("");
         tx18.setText("");
         
-        new UsuarioPerfil().setVisible(true);
+        new UsuarioHome().setVisible(true);
         dispose();
     }//GEN-LAST:event_B14UpdatejButton5ActionPerformed
 
     private void B15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B15ActionPerformed
         // TODO add your handling code here:
-        new UsuarioPerfil().setVisible(true);
+        new UsuarioHome().setVisible(true);
         dispose();
     }//GEN-LAST:event_B15ActionPerformed
 
@@ -252,7 +252,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         tx17.setText("");
         tx18.setText("");
         
-        new UsuarioPerfil().setVisible(true);
+        new UsuarioHome().setVisible(true);
         dispose();
     }//GEN-LAST:event_B14Update1jButton5ActionPerformed
 

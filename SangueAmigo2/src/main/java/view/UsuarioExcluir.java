@@ -200,7 +200,7 @@ public class UsuarioExcluir extends javax.swing.JFrame {
         tx6.setText("");
         tx7.setText(""); */
 
-        new UsuarioPerfil().setVisible(true);
+        new UsuarioHome().setVisible(true);
     }//GEN-LAST:event_B12ExcluirjButton5ActionPerformed
 
     private void tx2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx2ActionPerformed
@@ -209,7 +209,7 @@ public class UsuarioExcluir extends javax.swing.JFrame {
 
     private void B13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B13ActionPerformed
         // TODO add your handling code here:
-        new UsuarioPerfil().setVisible(true);
+        new UsuarioHome().setVisible(true);
     }//GEN-LAST:event_B13ActionPerformed
 
     /**
