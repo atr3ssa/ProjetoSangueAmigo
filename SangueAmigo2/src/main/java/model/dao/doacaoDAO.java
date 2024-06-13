@@ -44,5 +44,20 @@ public class doacaoDAO {
         e.printStackTrace();
        }
     }
+    
+    public void delete2 (AgendarDoacao doacao) {
+        String sql = "DELETE FROM agendardoacao WHERE local_doacao=? and data_doacao=? and hora_doacao=? and opcaoDoacao=?";
+        try (Connection c = ConexaoDB.obtemConexao(); PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, doacao.getLocal_doacao());
+            ps.setString(2, doacao.getData_doacao());
+            ps.setString(3, doacao.getHora_doacao());
+            ps.setString(4, doacao.getOpcaoDoacao());
+            ps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Agendamento desmarcado com sucesso");
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Processo não realizado");
+            e.printStackTrace();
+        }
+    }
 }
 

@@ -48,6 +48,21 @@ public class exameDAO {
        }
     }
 
+     public void delete2 (AgendarExames agendarexames) {
+        String sql = "DELETE FROM agendarexames WHERE local_exame=? and data_exame=? and hora_exame=? and opcaoExame=?";
+        try (Connection c = ConexaoDB.obtemConexao(); PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, agendarexames.getLocal_exame());
+            ps.setString(2, agendarexames.getData_exame());
+            ps.setString(3, agendarexames.getHora_exame());
+            ps.setString(4, agendarexames.getOpcaoExame());
+            ps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Agendamento desmarcado com sucesso");
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Processo não realizado");
+            e.printStackTrace();
+        }
+    }
+    
 }
 
 

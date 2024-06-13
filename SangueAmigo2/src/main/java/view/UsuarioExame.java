@@ -46,17 +46,11 @@ public class UsuarioExame extends javax.swing.JFrame {
         lblTituloEx = new javax.swing.JLabel();
         tx8 = new javax.swing.JTextField();
         tx9 = new javax.swing.JTextField();
-        tx11 = new javax.swing.JTextField();
         tx10 = new javax.swing.JTextField();
-        B9 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        B9 = new javax.swing.JButton();
+        tx11 = new javax.swing.JComboBox<>();
+        B10 = new javax.swing.JButton();
 
         jTextField7.setBackground(new java.awt.Color(204, 0, 0));
         jTextField7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
@@ -99,9 +93,11 @@ public class UsuarioExame extends javax.swing.JFrame {
         lblTituloEx.setForeground(new java.awt.Color(204, 0, 0));
         lblTituloEx.setText("Agendar Exames");
 
-        B9.setBackground(new java.awt.Color(153, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(153, 0, 0));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         B9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        B9.setForeground(new java.awt.Color(255, 255, 255));
+        B9.setForeground(new java.awt.Color(153, 0, 0));
         B9.setText("Voltar");
         B9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         B9.addActionListener(new java.awt.event.ActionListener() {
@@ -110,72 +106,40 @@ public class UsuarioExame extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(153, 0, 0));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Testes Sorológicos:");
-
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Hepatite B e C;");
-
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Chagas;");
-
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Sífilis");
-
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("HIV");
-
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("ABO/Rh");
-
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("HTLV-I/II");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(0, 14, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))))
-                .addContainerGap())
+                .addComponent(B9, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel7)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(B9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33))
         );
+
+        tx11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hepatite B e C", "Chagas", "Sífilis", "HIV", "HTLV-I/II", "ABO/Rh" }));
+        tx11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx11ActionPerformed(evt);
+            }
+        });
+
+        B10.setBackground(new java.awt.Color(153, 0, 0));
+        B10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        B10.setForeground(new java.awt.Color(255, 255, 255));
+        B10.setText("Desmarcar");
+        B10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        B10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B10ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jQuadroExamesLayout = new javax.swing.GroupLayout(jQuadroExames);
         jQuadroExames.setLayout(jQuadroExamesLayout);
@@ -185,7 +149,7 @@ public class UsuarioExame extends javax.swing.JFrame {
                 .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jQuadroExamesLayout.createSequentialGroup()
                         .addGap(60, 60, 60)
-                        .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblTituloEx)
                             .addGroup(jQuadroExamesLayout.createSequentialGroup()
                                 .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -204,11 +168,11 @@ public class UsuarioExame extends javax.swing.JFrame {
                             .addGroup(jQuadroExamesLayout.createSequentialGroup()
                                 .addGap(1, 1, 1)
                                 .addComponent(lblOpcaoEx)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(tx11))))
+                                .addGap(18, 18, 18)
+                                .addComponent(tx11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jQuadroExamesLayout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(B9, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(B10, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(B8, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
@@ -233,10 +197,10 @@ public class UsuarioExame extends javax.swing.JFrame {
                 .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblOpcaoEx)
                     .addComponent(tx11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(76, 76, 76)
+                .addGap(74, 74, 74)
                 .addGroup(jQuadroExamesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(B8, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(B9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(B10, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(32, Short.MAX_VALUE))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -261,7 +225,7 @@ public class UsuarioExame extends javax.swing.JFrame {
                             agendarexames.setLocal_exame(tx8.getText());
                             agendarexames.setData_exame(tx9.getText());
                             agendarexames.setHora_exame(tx10.getText());
-                            agendarexames.setOpcaoExame(tx11.getText());
+                            agendarexames.setOpcaoExame(tx11.getSelectedItem().toString());
                             
                             
                            
@@ -272,7 +236,7 @@ public class UsuarioExame extends javax.swing.JFrame {
                             tx8.setText("");
 			    tx9.setText("");
                             tx10.setText("");
-			    tx11.setText("");    
+			    //tx11.setText("");    
  
     }//GEN-LAST:event_B8ActionPerformed
 
@@ -281,6 +245,29 @@ public class UsuarioExame extends javax.swing.JFrame {
         new UsuarioHome().setVisible(true);
         dispose();
     }//GEN-LAST:event_B9ActionPerformed
+
+    private void tx11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx11ActionPerformed
+
+    private void B10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B10ActionPerformed
+        // TODO add your handling code here:
+         agendarexames.setLocal_exame (tx8.getText());
+         agendarexames.setData_exame(tx9.getText());
+         agendarexames.setHora_exame (tx10.getText());
+         agendarexames.setOpcaoExame(tx11.getSelectedItem().toString());
+       
+
+        exameBD = new exameDAO();
+        exameBD.delete2(agendarexames);
+
+        // limpar campos
+        tx8.setText("");
+        tx9.setText("");
+        tx10.setText("");
+        //tx11.setText("");
+        
+    }//GEN-LAST:event_B10ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -319,16 +306,10 @@ public class UsuarioExame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton B10;
     private javax.swing.JButton B8;
     private javax.swing.JButton B9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jQuadroExames;
     private javax.swing.JTextField jTextField7;
@@ -338,7 +319,7 @@ public class UsuarioExame extends javax.swing.JFrame {
     private javax.swing.JLabel lblOpcaoEx;
     private javax.swing.JLabel lblTituloEx;
     private javax.swing.JTextField tx10;
-    private javax.swing.JTextField tx11;
+    private javax.swing.JComboBox<String> tx11;
     private javax.swing.JTextField tx8;
     private javax.swing.JTextField tx9;
     // End of variables declaration//GEN-END:variables

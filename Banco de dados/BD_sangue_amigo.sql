@@ -55,6 +55,7 @@ UPDATE  usuario SET nome_usuario="Ramon",senha_usuario="" WHERE id_usuario=0;
 
 describe agendarexames;
 select* from agendarexames;
+-- select local_exame, data_exame, opcaoExame from agendarexames join usuario on id_usuario= doador where codigo_exame=?;
 
 
 -- AgendarDoacao
