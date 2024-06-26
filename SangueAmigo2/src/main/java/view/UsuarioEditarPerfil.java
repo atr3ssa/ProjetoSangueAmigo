@@ -23,6 +23,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
      * Creates new form UsuarioEditarPerfil
      */
     public UsuarioEditarPerfil() {
+        //inicialização
         initComponents();
     }
 
