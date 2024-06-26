@@ -107,7 +107,8 @@ public class usuarioDAO {
     public void consulta(Usuario usuario) {
     String sql = "SELECT * FROM usuario WHERE nome_usuario=?";
     try (Connection c = ConexaoDB.obtemConexao(); PreparedStatement ps = c.prepareStatement(sql)) {
-        ps.setInt(1, usuario.getId_usuario());
+        //ps.setInt(1, usuario.getId_usuario()); // arrumar aqui
+        ps.setString(1, usuario.getNome_usuario());
         ResultSet rs = ps.executeQuery();
 
         if (rs.next()) {
@@ -125,6 +126,27 @@ public class usuarioDAO {
         JOptionPane.showMessageDialog(null, "Consulta não realizada com sucesso");
         e.printStackTrace();
     } 
+    }
+    
+     public static void carregarDadosUsuario(Usuario usuario) {
+        // Realiza a consulta no banco de dados e carrega os dados do usuário nos campos
+        String sql = "SELECT * FROM usuario WHERE nome_usuario=?";
+        try (Connection c = ConexaoDB.obtemConexao(); PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, usuario.getNome_usuario());
+            ResultSet rs = ps.executeQuery();
+
+//             if (rs.next()) {
+//                tx16.setText(rs.getString("nome_usuario"));
+//                tx17.setText(rs.getString("email_usuario"));
+//                tx18.setText(rs.getString("senha_usuario"));
+//                // Carregue outros campos conforme necessário
+//      }
+
+            rs.close();
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Erro ao carregar dados do usuário");
+            e.printStackTrace();
+        }
     }
 }
 

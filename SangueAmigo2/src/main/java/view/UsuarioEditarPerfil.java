@@ -6,6 +6,11 @@ package view;
 
 import model.bean.Usuario;
 import conection.ConexaoDB;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 import model.dao.usuarioDAO;
 
 /**
@@ -26,6 +31,8 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         //inicialização
         initComponents();
     }
+    
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -220,6 +227,11 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
 
     private void tx16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx16ActionPerformed
         // TODO add your handling code here:
+        
+        
+     
+        
+         
     }//GEN-LAST:event_tx16ActionPerformed
 
     private void B14UpdatejButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B14UpdatejButton5ActionPerformed
@@ -231,7 +243,6 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         usuario.setEmail_usuario (tx17.getText());
         usuario.setSenha_usuario(tx18.getText());
         
-       
 
         usuarioBD = new usuarioDAO();
         usuarioBD.update2(usuario);
@@ -240,6 +251,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         tx16.setText("");
         tx17.setText("");
         tx18.setText("");
+        
         
         new UsuarioHome().setVisible(true);
         dispose();

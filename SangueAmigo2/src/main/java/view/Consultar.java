@@ -5,6 +5,11 @@
 package view;
 
 import conection.ConexaoDB;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 import model.bean.Usuario;
 import model.dao.usuarioDAO;
 
@@ -26,6 +31,8 @@ public class Consultar extends javax.swing.JFrame {
     public Consultar() {
         initComponents();
     }
+    
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -101,15 +108,17 @@ public class Consultar extends javax.swing.JFrame {
     private void BConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BConsultarActionPerformed
         // TODO add your handling code here:
          usuario.setNome_usuario(txConsultar.getText());
-        
-        
-       
-
+         
         usuarioBD = new usuarioDAO();
         usuarioBD.consulta(usuario);
-
+        
         // limpar campos
         txConsultar.setText("");
+        //
+        new UsuarioEditarPerfil().setVisible(true);
+     
+        
+      
         
     }//GEN-LAST:event_BConsultarActionPerformed
 

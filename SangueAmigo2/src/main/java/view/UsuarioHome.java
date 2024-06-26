@@ -30,6 +30,7 @@ public class UsuarioHome extends javax.swing.JFrame {
     public UsuarioHome() {
         initComponents();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -201,6 +202,7 @@ public class UsuarioHome extends javax.swing.JFrame {
 
     private void B7UpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B7UpdateActionPerformed
         // TODO add your handling code here:
+        
         new UsuarioEditarPerfil().setVisible(true);
         dispose();
         
