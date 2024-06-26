@@ -9,6 +9,7 @@ view\UsuarioCadastro$6.class
 conection\ConexaoDB.class
 view\UsuarioLogin.class
 view\UsuarioEditarPerfil$1.class
+view\Consultar$2.class
 view\UsuarioDoacao$2.class
 view\UsuarioDoacao.class
 model\bean\AgendarExames.class

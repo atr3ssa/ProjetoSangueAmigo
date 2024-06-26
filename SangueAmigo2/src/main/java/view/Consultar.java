@@ -4,11 +4,21 @@
  */
 package view;
 
+import conection.ConexaoDB;
+import model.bean.Usuario;
+import model.dao.usuarioDAO;
+
 /**
  *
  * @author DreEm
  */
 public class Consultar extends javax.swing.JFrame {
+     // banco de dados
+                Usuario usuario= new Usuario();
+                ConexaoDB conn = new ConexaoDB();  
+                //usuarioDAO = usuario padrao = todos os métodos de CRUD ficam aqui, tudo do banco fica nele
+                //usuario = normal, só os getters e setters
+                usuarioDAO usuarioBD;
 
     /**
      * Creates new form Consultar
@@ -38,6 +48,11 @@ public class Consultar extends javax.swing.JFrame {
         jLabel1.setText("Digite o seu nome:");
 
         BConsultar.setText("Consultar");
+        BConsultar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BConsultarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -82,6 +97,21 @@ public class Consultar extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BConsultarActionPerformed
+        // TODO add your handling code here:
+         usuario.setNome_usuario(txConsultar.getText());
+        
+        
+       
+
+        usuarioBD = new usuarioDAO();
+        usuarioBD.consulta(usuario);
+
+        // limpar campos
+        txConsultar.setText("");
+        
+    }//GEN-LAST:event_BConsultarActionPerformed
 
     /**
      * @param args the command line arguments

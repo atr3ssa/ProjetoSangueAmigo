@@ -105,7 +105,7 @@ public class usuarioDAO {
  //Método consulta e método update
   
     public void consulta(Usuario usuario) {
-    String sql = "SELECT * FROM usuario WHERE cpf_usuario=?";
+    String sql = "SELECT * FROM usuario WHERE nome_usuario=?";
     try (Connection c = ConexaoDB.obtemConexao(); PreparedStatement ps = c.prepareStatement(sql)) {
         ps.setInt(1, usuario.getId_usuario());
         ResultSet rs = ps.executeQuery();
@@ -115,12 +115,14 @@ public class usuarioDAO {
             usuario.setCpf_usuario(rs.getString("cpf_usuario"));
             usuario.setEmail_usuario(rs.getString("email_usuario"));
             usuario.setSenha_usuario(rs.getString("senha_usuario"));
-            usuario.setDataDeNascimento(rs.getString("data_de_nascimento"));
+            usuario.setDataDeNascimento(rs.getString("dataDeNascimento"));
             usuario.setCep(rs.getString("cep"));
-            usuario.setTipoSanguineo(rs.getString("tipo_sanguineo"));
+            usuario.setTipoSanguineo(rs.getString("tipoSanguineo"));
+            JOptionPane.showMessageDialog(null, "Consulta realizada com sucesso");
         }
         rs.close();
     } catch (SQLException e) {
+        JOptionPane.showMessageDialog(null, "Consulta não realizada com sucesso");
         e.printStackTrace();
     } 
     }
