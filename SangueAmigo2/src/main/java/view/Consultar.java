@@ -107,9 +107,10 @@ public class Consultar extends javax.swing.JFrame {
 
     private void BConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BConsultarActionPerformed
         // TODO add your handling code here:
-         usuario.setNome_usuario(txConsultar.getText());
+         usuario.setCpf_usuario(txConsultar.getText());
          
         usuarioBD = new usuarioDAO();
+       // usuario.setCpf_usuario(txConsultar.getText());
         usuarioBD.consulta(usuario);
         
         // limpar campos
