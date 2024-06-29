@@ -422,19 +422,28 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
 
     private void B16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B16ActionPerformed
         // TODO add your handling code here:
-        usuario.setCpf_usuario(tx16.getText());
+        if (evt.getSource() == B16)
+			{
+			    if ("".equals(tx16.getText())) {
+                            JOptionPane.showMessageDialog(null, "Digitar o CPF  para consultar");
+                            }
+                            else
+                            {	 usuario.setCpf_usuario(tx16.getText());
          
-        usuarioBD = new usuarioDAO();
-       // usuario.setCpf_usuario(txConsultar.getText());
-        usuarioBD.consulta(usuario);
+                                    usuarioBD = new usuarioDAO();
+                                   // usuario.setCpf_usuario(txConsultar.getText());
+                                    usuarioBD.consulta(usuario);
+
+
+                                    tx17.setText(usuario.getNome_usuario());
+                                    tx18.setText(usuario.getTipoSanguineo());
+                                    tx19.setText(usuario.getEmail_usuario());
+                                    tx20.setText(usuario.getDataDeNascimento());
+                                    tx21.setText(usuario.getCep());
+                                    tx22.setText(usuario.getSenha_usuario());
+                            }
+                        }
         
-        
-        tx17.setText(usuario.getNome_usuario());
-        tx18.setText(usuario.getTipoSanguineo());
-        tx19.setText(usuario.getEmail_usuario());
-        tx20.setText(usuario.getDataDeNascimento());
-        tx21.setText(usuario.getCep());
-        tx22.setText(usuario.getSenha_usuario());
         
     }//GEN-LAST:event_B16ActionPerformed
 
