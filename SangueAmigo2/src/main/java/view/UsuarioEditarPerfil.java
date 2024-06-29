@@ -45,12 +45,12 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         JQuadroVermelho2 = new javax.swing.JPanel();
-        lbl19 = new javax.swing.JLabel();
+        lbl17 = new javax.swing.JLabel();
         jblTituloCadastro2 = new javax.swing.JLabel();
         lbl22 = new javax.swing.JLabel();
-        lbl21 = new javax.swing.JLabel();
+        lbl19 = new javax.swing.JLabel();
+        tx17 = new javax.swing.JTextField();
         tx19 = new javax.swing.JTextField();
-        tx21 = new javax.swing.JTextField();
         B14Update = new javax.swing.JButton();
         B14 = new javax.swing.JButton();
         tx22 = new javax.swing.JPasswordField();
@@ -58,14 +58,14 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         B15 = new javax.swing.JButton();
         lbl16 = new javax.swing.JLabel();
         tx16 = new javax.swing.JTextField();
-        lbl17 = new javax.swing.JLabel();
-        tx17 = new javax.swing.JTextField();
+        lbl21 = new javax.swing.JLabel();
+        tx21 = new javax.swing.JTextField();
         lbl20 = new javax.swing.JLabel();
-        tx20 = new javax.swing.JTextField();
         lbl18 = new javax.swing.JLabel();
         tx18 = new javax.swing.JTextField();
         B16 = new javax.swing.JButton();
         lbl23 = new javax.swing.JLabel();
+        tx20 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -76,9 +76,9 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         JQuadroVermelho2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         JQuadroVermelho2.setForeground(new java.awt.Color(102, 0, 0));
 
-        lbl19.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl19.setForeground(new java.awt.Color(204, 0, 0));
-        lbl19.setText("Nome:");
+        lbl17.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lbl17.setForeground(new java.awt.Color(204, 0, 0));
+        lbl17.setText("Nome:");
 
         jblTituloCadastro2.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
         jblTituloCadastro2.setForeground(new java.awt.Color(204, 0, 0));
@@ -88,9 +88,15 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         lbl22.setForeground(new java.awt.Color(204, 0, 0));
         lbl22.setText("Senha:");
 
-        lbl21.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl21.setForeground(new java.awt.Color(204, 0, 0));
-        lbl21.setText("Email:");
+        lbl19.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lbl19.setForeground(new java.awt.Color(204, 0, 0));
+        lbl19.setText("Email:");
+
+        tx17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx17ActionPerformed(evt);
+            }
+        });
 
         tx19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,17 +143,17 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(41, Short.MAX_VALUE)
                 .addComponent(B15, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addGap(33, 33, 33))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(B15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30))
+                .addGap(29, 29, 29))
         );
 
         lbl16.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
@@ -160,30 +166,24 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             }
         });
 
-        lbl17.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl17.setForeground(new java.awt.Color(204, 0, 0));
-        lbl17.setText("CEP:");
+        lbl21.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lbl21.setForeground(new java.awt.Color(204, 0, 0));
+        lbl21.setText("CEP:");
 
-        tx17.addContainerListener(new java.awt.event.ContainerAdapter() {
+        tx21.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentAdded(java.awt.event.ContainerEvent evt) {
-                tx17ComponentAdded(evt);
+                tx21ComponentAdded(evt);
             }
         });
-        tx17.addActionListener(new java.awt.event.ActionListener() {
+        tx21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tx17ActionPerformed(evt);
+                tx21ActionPerformed(evt);
             }
         });
 
         lbl20.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         lbl20.setForeground(new java.awt.Color(204, 0, 0));
         lbl20.setText("Data de Nascimento:");
-
-        tx20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tx20ActionPerformed(evt);
-            }
-        });
 
         lbl18.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         lbl18.setForeground(new java.awt.Color(204, 0, 0));
@@ -210,6 +210,17 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         lbl23.setForeground(new java.awt.Color(204, 0, 0));
         lbl23.setText("*");
 
+        tx20.addContainerListener(new java.awt.event.ContainerAdapter() {
+            public void componentAdded(java.awt.event.ContainerEvent evt) {
+                tx20ComponentAdded(evt);
+            }
+        });
+        tx20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx20ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout JQuadroVermelho2Layout = new javax.swing.GroupLayout(JQuadroVermelho2);
         JQuadroVermelho2.setLayout(JQuadroVermelho2Layout);
         JQuadroVermelho2Layout.setHorizontalGroup(
@@ -217,94 +228,86 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(B16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(B14Update, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(B14, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31))
+                    .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
                         .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
+                                .addComponent(lbl20)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(tx20, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lbl21)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(tx21, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
+                                .addComponent(lbl22)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(tx22, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
+                                .addComponent(lbl19)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(tx19, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
+                                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lbl17)
+                                    .addComponent(lbl16))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                                        .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(lbl19)
-                                            .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(lbl17)
-                                                .addComponent(lbl16)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(tx19, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                                                .addComponent(tx17, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(lbl18)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(tx18, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(tx16, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lbl23))
-                                    .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                                        .addGap(14, 14, 14)
-                                        .addComponent(jblTituloCadastro2))))
-                            .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                                    .addContainerGap()
-                                    .addComponent(lbl20)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(tx20, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, JQuadroVermelho2Layout.createSequentialGroup()
-                                    .addGap(26, 26, 26)
-                                    .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lbl21)
-                                        .addComponent(lbl22))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(tx21, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(tx22, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(B16, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
-                        .addComponent(B14Update, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26)
-                        .addComponent(B14, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)))
+                                        .addComponent(tx16, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lbl23)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lbl18)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(tx18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(tx17, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jblTituloCadastro2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)))
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         JQuadroVermelho2Layout.setVerticalGroup(
             JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addContainerGap(57, Short.MAX_VALUE)
                 .addComponent(jblTituloCadastro2)
-                .addGap(18, 18, 18)
+                .addGap(42, 42, 42)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tx16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl16)
-                    .addComponent(lbl23))
-                .addGap(18, 18, 18)
-                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tx17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl17)
+                    .addComponent(lbl23)
                     .addComponent(lbl18)
                     .addComponent(tx18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(30, 30, 30)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tx19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl19))
+                    .addComponent(tx17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl17))
+                .addGap(20, 20, 20)
+                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl19)
+                    .addComponent(tx19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl20)
-                    .addComponent(tx20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(14, 14, 14)
-                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tx20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl21)
                     .addComponent(tx21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(26, 26, 26)
+                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tx22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl22))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addGap(41, 41, 41)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(B14Update, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(B14, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(B16, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(B16, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(B14, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -319,16 +322,17 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(JQuadroVermelho2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(JQuadroVermelho2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -338,22 +342,22 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tx19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx19ActionPerformed
+    private void tx17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx17ActionPerformed
         // TODO add your handling code here:
         
         
      
         
          
-    }//GEN-LAST:event_tx19ActionPerformed
+    }//GEN-LAST:event_tx17ActionPerformed
 
     private void B14UpdatejButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B14UpdatejButton5ActionPerformed
 
         //pegando o que foi digitado no Nome do formulario e atualizando
         //padrão mvc
 
-        usuario.setNome_usuario(tx19.getText());
-        usuario.setEmail_usuario (tx21.getText());
+        usuario.setNome_usuario(tx17.getText());
+        usuario.setEmail_usuario (tx19.getText());
         usuario.setSenha_usuario(tx22.getText());
         
 
@@ -361,8 +365,8 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         usuarioBD.update2(usuario);
 
         // limpar campos
+        tx17.setText("");
         tx19.setText("");
-        tx21.setText("");
         tx22.setText("");
         
         
@@ -379,7 +383,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
     private void B14jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B14jButton5ActionPerformed
         // TODO add your handling code here:
         
-        usuario.setEmail_usuario (tx21.getText());
+        usuario.setEmail_usuario (tx19.getText());
         usuario.setSenha_usuario(tx22.getText());
         
        
@@ -388,7 +392,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         usuarioBD.delete2(usuario);
 
         // limpar campos
-        tx21.setText("");
+        tx19.setText("");
         tx22.setText("");
         
         new UsuarioHome().setVisible(true);
@@ -399,13 +403,9 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tx16ActionPerformed
 
-    private void tx17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx17ActionPerformed
+    private void tx21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx21ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tx17ActionPerformed
-
-    private void tx20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tx20ActionPerformed
+    }//GEN-LAST:event_tx21ActionPerformed
 
     private void tx18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx18ActionPerformed
         // TODO add your handling code here:
@@ -415,9 +415,21 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_B16ActionPerformed
 
-    private void tx17ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_tx17ComponentAdded
+    private void tx21ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_tx21ComponentAdded
         // TODO add your handling code here:
-    }//GEN-LAST:event_tx17ComponentAdded
+    }//GEN-LAST:event_tx21ComponentAdded
+
+    private void tx19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx19ActionPerformed
+
+    private void tx20ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_tx20ComponentAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx20ComponentAdded
+
+    private void tx20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx20ActionPerformed
 
     /**
      * @param args the command line arguments
