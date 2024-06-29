@@ -355,18 +355,23 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
 
         //pegando o que foi digitado no Nome do formulario e atualizando
         //padrão mvc
-
-        usuario.setNome_usuario(tx17.getText());
+        usuario.setCpf_usuario(tx16.getText());
+        usuario.setNome_usuario (tx17.getText());
+        usuario.setTipoSanguineo(tx18.getText());
         usuario.setEmail_usuario (tx19.getText());
-        usuario.setSenha_usuario(tx22.getText());
-        
+        usuario.setDataDeNascimento(tx20.getText());
+        usuario.setCep(tx21.getText());
+        usuario.setSenha_usuario (tx22.getText());
 
         usuarioBD = new usuarioDAO();
         usuarioBD.update2(usuario);
 
         // limpar campos
         tx17.setText("");
+        tx18.setText("");
         tx19.setText("");
+        tx20.setText("");
+        tx21.setText("");
         tx22.setText("");
         
         
@@ -383,8 +388,8 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
     private void B14jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B14jButton5ActionPerformed
         // TODO add your handling code here:
         
-        usuario.setEmail_usuario (tx19.getText());
-        usuario.setSenha_usuario(tx22.getText());
+        usuario.setCpf_usuario (tx16.getText());
+        //usuario.setSenha_usuario(tx22.getText());
         
        
 
@@ -392,7 +397,11 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         usuarioBD.delete2(usuario);
 
         // limpar campos
+        tx17.setText("");
+        tx18.setText("");
         tx19.setText("");
+        tx20.setText("");
+        tx21.setText("");
         tx22.setText("");
         
         new UsuarioHome().setVisible(true);
