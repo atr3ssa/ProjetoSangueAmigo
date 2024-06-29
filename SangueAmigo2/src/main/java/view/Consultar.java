@@ -47,6 +47,7 @@ public class Consultar extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         txConsultar = new javax.swing.JTextField();
         BConsultar = new javax.swing.JButton();
+        txse = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,8 +71,9 @@ public class Consultar extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1)
-                            .addComponent(txConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(61, 61, 61)
                         .addComponent(BConsultar)))
@@ -80,7 +82,9 @@ public class Consultar extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(82, 82, 82)
+                .addGap(24, 24, 24)
+                .addComponent(txse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(txConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -113,10 +117,12 @@ public class Consultar extends javax.swing.JFrame {
        // usuario.setCpf_usuario(txConsultar.getText());
         usuarioBD.consulta(usuario);
         
+        txse.setText(usuario.getSenha_usuario());
+        //Tx3.setText(usuario.getPeriodo());
         // limpar campos
-        txConsultar.setText("");
+        //txConsultar.setText("");
         //
-        new UsuarioEditarPerfil().setVisible(true);
+        //new UsuarioEditarPerfil().setVisible(true);
      
         
       
@@ -163,5 +169,6 @@ public class Consultar extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txConsultar;
+    private javax.swing.JTextField txse;
     // End of variables declaration//GEN-END:variables
 }
