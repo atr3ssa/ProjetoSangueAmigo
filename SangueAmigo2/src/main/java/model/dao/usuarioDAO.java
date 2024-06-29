@@ -105,10 +105,10 @@ public class usuarioDAO {
  //Método consulta e método update
   
     public void consulta(Usuario usuario) {
-    String sql = "SELECT * FROM usuario WHERE nome_usuario=?";
+    String sql = "SELECT * FROM usuario WHERE cpf_usuario=?";
     try (Connection c = ConexaoDB.obtemConexao(); PreparedStatement ps = c.prepareStatement(sql)) {
         //ps.setInt(1, usuario.getId_usuario()); // arrumar aqui
-        ps.setString(1, usuario.getNome_usuario());
+        ps.setString(1, usuario.getCpf_usuario());
         ResultSet rs = ps.executeQuery();
 
         if (rs.next()) {
