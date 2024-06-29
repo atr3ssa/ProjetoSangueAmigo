@@ -55,6 +55,12 @@ public class Consultar extends javax.swing.JFrame {
 
         jLabel1.setText("Digite o seu nome:");
 
+        txConsultar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txConsultarActionPerformed(evt);
+            }
+        });
+
         BConsultar.setText("Consultar");
         BConsultar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,6 +134,10 @@ public class Consultar extends javax.swing.JFrame {
       
         
     }//GEN-LAST:event_BConsultarActionPerformed
+
+    private void txConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txConsultarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txConsultarActionPerformed
 
     /**
      * @param args the command line arguments

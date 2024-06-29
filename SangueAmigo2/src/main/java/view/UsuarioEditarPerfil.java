@@ -267,7 +267,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(lbl18)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(tx18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(tx18, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(tx17, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(jblTituloCadastro2))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)))
@@ -422,6 +422,20 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
 
     private void B16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B16ActionPerformed
         // TODO add your handling code here:
+        usuario.setCpf_usuario(tx16.getText());
+         
+        usuarioBD = new usuarioDAO();
+       // usuario.setCpf_usuario(txConsultar.getText());
+        usuarioBD.consulta(usuario);
+        
+        
+        tx17.setText(usuario.getNome_usuario());
+        tx18.setText(usuario.getTipoSanguineo());
+        tx19.setText(usuario.getEmail_usuario());
+        tx20.setText(usuario.getDataDeNascimento());
+        tx21.setText(usuario.getCep());
+        tx22.setText(usuario.getSenha_usuario());
+        
     }//GEN-LAST:event_B16ActionPerformed
 
     private void tx21ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_tx21ComponentAdded

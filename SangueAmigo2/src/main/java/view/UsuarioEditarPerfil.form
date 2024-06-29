@@ -128,7 +128,7 @@
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
                                               <Component id="lbl18" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="tx18" min="-2" max="-2" attributes="0"/>
+                                              <Component id="tx18" min="-2" pref="81" max="-2" attributes="0"/>
                                           </Group>
                                           <Component id="tx17" min="-2" pref="298" max="-2" attributes="0"/>
                                       </Group>
