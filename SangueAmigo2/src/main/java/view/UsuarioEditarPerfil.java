@@ -45,25 +45,27 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         JQuadroVermelho2 = new javax.swing.JPanel();
-        lbl16 = new javax.swing.JLabel();
-        jblTituloCadastro2 = new javax.swing.JLabel();
-        lbl18 = new javax.swing.JLabel();
-        lbl17 = new javax.swing.JLabel();
-        tx16 = new javax.swing.JTextField();
-        tx17 = new javax.swing.JTextField();
-        B14Update = new javax.swing.JButton();
-        B15 = new javax.swing.JButton();
-        B14Update1 = new javax.swing.JButton();
-        tx18 = new javax.swing.JPasswordField();
-        jPanel2 = new javax.swing.JPanel();
         lbl19 = new javax.swing.JLabel();
+        jblTituloCadastro2 = new javax.swing.JLabel();
+        lbl22 = new javax.swing.JLabel();
+        lbl21 = new javax.swing.JLabel();
         tx19 = new javax.swing.JTextField();
+        tx21 = new javax.swing.JTextField();
+        B14Update = new javax.swing.JButton();
+        B14 = new javax.swing.JButton();
+        tx22 = new javax.swing.JPasswordField();
+        jPanel2 = new javax.swing.JPanel();
+        B15 = new javax.swing.JButton();
+        lbl16 = new javax.swing.JLabel();
+        tx16 = new javax.swing.JTextField();
+        lbl17 = new javax.swing.JLabel();
+        tx17 = new javax.swing.JTextField();
         lbl20 = new javax.swing.JLabel();
         tx20 = new javax.swing.JTextField();
-        lbl21 = new javax.swing.JLabel();
-        tx21 = new javax.swing.JTextField();
-        lbl22 = new javax.swing.JLabel();
-        tx22 = new javax.swing.JTextField();
+        lbl18 = new javax.swing.JLabel();
+        tx18 = new javax.swing.JTextField();
+        B16 = new javax.swing.JButton();
+        lbl23 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,38 +76,51 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         JQuadroVermelho2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         JQuadroVermelho2.setForeground(new java.awt.Color(102, 0, 0));
 
-        lbl16.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl16.setForeground(new java.awt.Color(204, 0, 0));
-        lbl16.setText("Nome:");
+        lbl19.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lbl19.setForeground(new java.awt.Color(204, 0, 0));
+        lbl19.setText("Nome:");
 
         jblTituloCadastro2.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
         jblTituloCadastro2.setForeground(new java.awt.Color(204, 0, 0));
         jblTituloCadastro2.setText("Editar perfil");
 
-        lbl18.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl18.setForeground(new java.awt.Color(204, 0, 0));
-        lbl18.setText("Senha:");
+        lbl22.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lbl22.setForeground(new java.awt.Color(204, 0, 0));
+        lbl22.setText("Senha:");
 
-        lbl17.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl17.setForeground(new java.awt.Color(204, 0, 0));
-        lbl17.setText("Email:");
+        lbl21.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lbl21.setForeground(new java.awt.Color(204, 0, 0));
+        lbl21.setText("Email:");
 
-        tx16.addActionListener(new java.awt.event.ActionListener() {
+        tx19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tx16ActionPerformed(evt);
+                tx19ActionPerformed(evt);
             }
         });
 
         B14Update.setBackground(new java.awt.Color(153, 0, 0));
         B14Update.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         B14Update.setForeground(new java.awt.Color(255, 255, 255));
-        B14Update.setText("Atualizar dados");
+        B14Update.setText("Atualizar ");
         B14Update.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         B14Update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 B14UpdatejButton5ActionPerformed(evt);
             }
         });
+
+        B14.setBackground(new java.awt.Color(153, 0, 0));
+        B14.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        B14.setForeground(new java.awt.Color(255, 255, 255));
+        B14.setText("Excluir");
+        B14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        B14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B14jButton5ActionPerformed(evt);
+            }
+        });
+
+        jPanel2.setBackground(new java.awt.Color(153, 0, 0));
 
         B15.setBackground(new java.awt.Color(153, 0, 0));
         B15.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -118,43 +133,51 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             }
         });
 
-        B14Update1.setBackground(new java.awt.Color(153, 0, 0));
-        B14Update1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        B14Update1.setForeground(new java.awt.Color(255, 255, 255));
-        B14Update1.setText("Excluir dados");
-        B14Update1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        B14Update1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B14Update1jButton5ActionPerformed(evt);
-            }
-        });
-
-        jPanel2.setBackground(new java.awt.Color(153, 0, 0));
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 160, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(B15, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(25, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(B15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
         );
 
-        lbl19.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl19.setForeground(new java.awt.Color(204, 0, 0));
-        lbl19.setText("CPF:");
+        lbl16.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lbl16.setForeground(new java.awt.Color(204, 0, 0));
+        lbl16.setText("CPF:");
 
-        tx19.addActionListener(new java.awt.event.ActionListener() {
+        tx16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tx19ActionPerformed(evt);
+                tx16ActionPerformed(evt);
+            }
+        });
+
+        lbl17.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lbl17.setForeground(new java.awt.Color(204, 0, 0));
+        lbl17.setText("CEP:");
+
+        tx17.addContainerListener(new java.awt.event.ContainerAdapter() {
+            public void componentAdded(java.awt.event.ContainerEvent evt) {
+                tx17ComponentAdded(evt);
+            }
+        });
+        tx17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx17ActionPerformed(evt);
             }
         });
 
         lbl20.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         lbl20.setForeground(new java.awt.Color(204, 0, 0));
-        lbl20.setText("CEP:");
+        lbl20.setText("Data de Nascimento:");
 
         tx20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,25 +185,30 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             }
         });
 
-        lbl21.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl21.setForeground(new java.awt.Color(204, 0, 0));
-        lbl21.setText("Data de Nascimento:");
+        lbl18.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lbl18.setForeground(new java.awt.Color(204, 0, 0));
+        lbl18.setText("Tipo Sanguíneo:");
 
-        tx21.addActionListener(new java.awt.event.ActionListener() {
+        tx18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tx21ActionPerformed(evt);
+                tx18ActionPerformed(evt);
             }
         });
 
-        lbl22.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl22.setForeground(new java.awt.Color(204, 0, 0));
-        lbl22.setText("Tipo Sanguíneo:");
-
-        tx22.addActionListener(new java.awt.event.ActionListener() {
+        B16.setBackground(new java.awt.Color(153, 0, 0));
+        B16.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        B16.setForeground(new java.awt.Color(255, 255, 255));
+        B16.setText("Consultar");
+        B16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        B16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tx22ActionPerformed(evt);
+                B16ActionPerformed(evt);
             }
         });
+
+        lbl23.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        lbl23.setForeground(new java.awt.Color(204, 0, 0));
+        lbl23.setText("*");
 
         javax.swing.GroupLayout JQuadroVermelho2Layout = new javax.swing.GroupLayout(JQuadroVermelho2);
         JQuadroVermelho2.setLayout(JQuadroVermelho2Layout);
@@ -189,48 +217,51 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(B15, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26)
+                        .addComponent(B16, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(B14Update, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(B14Update1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(B14, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                         .addGap(21, 21, 21)
                         .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lbl20)
-                                    .addComponent(lbl16)
-                                    .addComponent(lbl19))
+                                    .addComponent(lbl19)
+                                    .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lbl17)
+                                        .addComponent(lbl16)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(tx16, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(tx19, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
-                                        .addComponent(tx20, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(tx17, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lbl22)
+                                        .addComponent(lbl18)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(tx22, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(tx19, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(tx18, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(tx16, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lbl23))
                             .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                                 .addGap(14, 14, 14)
                                 .addComponent(jblTituloCadastro2))))
                     .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                             .addContainerGap()
-                            .addComponent(lbl21)
+                            .addComponent(lbl20)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(tx21, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tx20, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, JQuadroVermelho2Layout.createSequentialGroup()
                             .addGap(26, 26, 26)
                             .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lbl17)
-                                .addComponent(lbl18))
+                                .addComponent(lbl21)
+                                .addComponent(lbl22))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(tx17, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(tx18, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(tx21, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(tx22, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -241,35 +272,36 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
                 .addComponent(jblTituloCadastro2)
                 .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tx16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl16)
+                    .addComponent(lbl23))
+                .addGap(18, 18, 18)
+                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tx17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl17)
+                    .addComponent(lbl18)
+                    .addComponent(tx18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tx19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl19))
                 .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tx20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl20)
-                    .addComponent(lbl22)
-                    .addComponent(tx22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tx16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl16))
-                .addGap(18, 18, 18)
+                    .addComponent(tx20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl21)
                     .addComponent(tx21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(14, 14, 14)
+                .addGap(18, 18, 18)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl17)
-                    .addComponent(tx17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl18)
-                    .addComponent(tx18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                    .addComponent(tx22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl22))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(B15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(B14Update, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(B14Update1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(B14, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(B16, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -303,32 +335,32 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tx16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx16ActionPerformed
+    private void tx19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx19ActionPerformed
         // TODO add your handling code here:
         
         
      
         
          
-    }//GEN-LAST:event_tx16ActionPerformed
+    }//GEN-LAST:event_tx19ActionPerformed
 
     private void B14UpdatejButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B14UpdatejButton5ActionPerformed
 
         //pegando o que foi digitado no Nome do formulario e atualizando
         //padrão mvc
 
-        usuario.setNome_usuario(tx16.getText());
-        usuario.setEmail_usuario (tx17.getText());
-        usuario.setSenha_usuario(tx18.getText());
+        usuario.setNome_usuario(tx19.getText());
+        usuario.setEmail_usuario (tx21.getText());
+        usuario.setSenha_usuario(tx22.getText());
         
 
         usuarioBD = new usuarioDAO();
         usuarioBD.update2(usuario);
 
         // limpar campos
-        tx16.setText("");
-        tx17.setText("");
-        tx18.setText("");
+        tx19.setText("");
+        tx21.setText("");
+        tx22.setText("");
         
         
         new UsuarioHome().setVisible(true);
@@ -341,11 +373,11 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_B15ActionPerformed
 
-    private void B14Update1jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B14Update1jButton5ActionPerformed
+    private void B14jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B14jButton5ActionPerformed
         // TODO add your handling code here:
         
-        usuario.setEmail_usuario (tx17.getText());
-        usuario.setSenha_usuario(tx18.getText());
+        usuario.setEmail_usuario (tx21.getText());
+        usuario.setSenha_usuario(tx22.getText());
         
        
 
@@ -353,28 +385,36 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         usuarioBD.delete2(usuario);
 
         // limpar campos
-        tx17.setText("");
-        tx18.setText("");
+        tx21.setText("");
+        tx22.setText("");
         
         new UsuarioHome().setVisible(true);
         dispose();
-    }//GEN-LAST:event_B14Update1jButton5ActionPerformed
+    }//GEN-LAST:event_B14jButton5ActionPerformed
 
-    private void tx19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx19ActionPerformed
+    private void tx16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx16ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tx19ActionPerformed
+    }//GEN-LAST:event_tx16ActionPerformed
+
+    private void tx17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx17ActionPerformed
 
     private void tx20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx20ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tx20ActionPerformed
 
-    private void tx21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx21ActionPerformed
+    private void tx18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx18ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tx21ActionPerformed
+    }//GEN-LAST:event_tx18ActionPerformed
 
-    private void tx22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx22ActionPerformed
+    private void B16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B16ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tx22ActionPerformed
+    }//GEN-LAST:event_B16ActionPerformed
+
+    private void tx17ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_tx17ComponentAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx17ComponentAdded
 
     /**
      * @param args the command line arguments
@@ -412,9 +452,10 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton B14;
     private javax.swing.JButton B14Update;
-    private javax.swing.JButton B14Update1;
     private javax.swing.JButton B15;
+    private javax.swing.JButton B16;
     private javax.swing.JPanel JQuadroVermelho2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -426,12 +467,13 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
     private javax.swing.JLabel lbl20;
     private javax.swing.JLabel lbl21;
     private javax.swing.JLabel lbl22;
+    private javax.swing.JLabel lbl23;
     private javax.swing.JTextField tx16;
     private javax.swing.JTextField tx17;
-    private javax.swing.JPasswordField tx18;
+    private javax.swing.JTextField tx18;
     private javax.swing.JTextField tx19;
     private javax.swing.JTextField tx20;
     private javax.swing.JTextField tx21;
-    private javax.swing.JTextField tx22;
+    private javax.swing.JPasswordField tx22;
     // End of variables declaration//GEN-END:variables
 }
