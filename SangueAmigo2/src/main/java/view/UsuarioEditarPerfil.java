@@ -355,28 +355,37 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
 
         //pegando o que foi digitado no Nome do formulario e atualizando
         //padrão mvc
-        usuario.setCpf_usuario(tx16.getText());
-        usuario.setNome_usuario (tx17.getText());
-        usuario.setTipoSanguineo(tx18.getText());
-        usuario.setEmail_usuario (tx19.getText());
-        usuario.setDataDeNascimento(tx20.getText());
-        usuario.setCep(tx21.getText());
-        usuario.setSenha_usuario (tx22.getText());
+        if(evt.getSource()==B14Update){
+			if ((usuario.getCpf_usuario() == "" )||{
+                            JOptionPane.showMessageDialog(null, "Primeiro consulte o Usuário");
+                        }
+                        else
+                        {
+                            usuario.setCpf_usuario(tx16.getText());
+                            usuario.setNome_usuario (tx17.getText());
+                            usuario.setTipoSanguineo(tx18.getText());
+                            usuario.setEmail_usuario (tx19.getText());
+                            usuario.setDataDeNascimento(tx20.getText());
+                            usuario.setCep(tx21.getText());
+                            usuario.setSenha_usuario (tx22.getText());
 
-        usuarioBD = new usuarioDAO();
-        usuarioBD.update2(usuario);
+                            usuarioBD = new usuarioDAO();
+                            usuarioBD.update2(usuario);
 
-        // limpar campos
-        tx17.setText("");
-        tx18.setText("");
-        tx19.setText("");
-        tx20.setText("");
-        tx21.setText("");
-        tx22.setText("");
+                            // limpar campos
+                            tx17.setText("");
+                            tx18.setText("");
+                            tx19.setText("");
+                            tx20.setText("");
+                            tx21.setText("");
+                            tx22.setText("");
+                            
+                            new UsuarioHome().setVisible(true);
+                             dispose();
+                        }
+                        }
         
-        
-        new UsuarioHome().setVisible(true);
-        dispose();
+    
     }//GEN-LAST:event_B14UpdatejButton5ActionPerformed
 
     private void B15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B15ActionPerformed
