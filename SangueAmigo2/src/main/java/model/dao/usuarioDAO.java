@@ -65,7 +65,7 @@ public class usuarioDAO {
             // Obter o ID gerado
             ResultSet rs = ps.getGeneratedKeys();
             if (rs.next()) {
-                usuario.setId_usuario(rs.getInt(1));
+                usuario.setCpf_usuario(rs.getString(11));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -88,12 +88,16 @@ public class usuarioDAO {
   
   
   public void update2(Usuario usuario) {
-    String sql = "UPDATE usuario SET nome_usuario=?, email_usuario=?, senha_usuario=? WHERE nome_usuario=?";
+    String sql = "UPDATE usuario SET nome_usuario=?, email_usuario=?, senha_usuario=?, dataDeNascimento=?, Cep=?, tipoSanguineo=?  WHERE Cpf_usuario=?";
     try (Connection c = ConexaoDB.obtemConexao(); PreparedStatement ps = c.prepareStatement(sql)) {
+
         ps.setString(1, usuario.getNome_usuario());
         ps.setString(2, usuario.getEmail_usuario());
         ps.setString(3, usuario.getSenha_usuario());
-        ps.setString(4, usuario.getNome_usuario());
+        ps.setString(4, usuario.getDataDeNascimento());
+        ps.setString(5, usuario.getCep());
+        ps.setString(6, usuario.getTipoSanguineo());
+        ps.setString(7, usuario.getCpf_usuario());
         ps.executeUpdate();
         JOptionPane.showMessageDialog(null, "Alteração realizada com sucesso");
     } catch (SQLException e) {

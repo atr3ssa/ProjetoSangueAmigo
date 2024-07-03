@@ -9,11 +9,11 @@ public class AgendarDoacao {
       private String data_doacao;
       private String hora_doacao;
       private String opcaoDoacao;
-      private int doador;
+      private String doador;
       
      
       //bd
-      public AgendarDoacao(int codigoDoacao, String local_doacao, String data_doacao, String hora_doacao, String opcaoDoacao, int doador) {
+      public AgendarDoacao(int codigoDoacao, String local_doacao, String data_doacao, String hora_doacao, String opcaoDoacao, String doador) {
           this.codigoDoacao = codigoDoacao;
           this.local_doacao = local_doacao;
           this.data_doacao = data_doacao;
@@ -28,7 +28,7 @@ public class AgendarDoacao {
         this.data_doacao = "";
         this.hora_doacao = "";
         this.opcaoDoacao = "";
-        this.doador = 0;
+        this.doador = "";
     }
 
      // GETTERS E SETTERS 
@@ -73,11 +73,11 @@ public class AgendarDoacao {
         this.opcaoDoacao = opcaoDoacao;
     }
 
-    public int getDoador() {
+    public String getDoador() {
         return doador;
     }
 
-    public void setDoador(int doador) {
+    public void setDoador(String doador) {
         this.doador = doador;
     }
 
