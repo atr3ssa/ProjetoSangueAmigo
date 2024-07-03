@@ -31,12 +31,13 @@ public class UsuarioLogin extends javax.swing.JFrame {
                 }
         
          public void logar(){
-            String sql = "select * from usuario where email_usuario=? and senha_usuario=?";
+            String sql = "select * from usuario where email_usuario=? or cpf_usuario=? and senha_usuario=?";
             try{
              Connection c = ConexaoDB.obtemConexao();
               PreparedStatement ps = c.prepareStatement(sql);
               ps.setString(1, txtUsuario.getText());
-              ps.setString(2, txtSenha.getText());
+              ps.setString(2, txtUsuario.getText());
+              ps.setString(3, txtSenha.getText());
               
               ResultSet rs = ps.executeQuery();
               
@@ -173,7 +174,7 @@ public class UsuarioLogin extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(73, 73, 73)
                         .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel4)
