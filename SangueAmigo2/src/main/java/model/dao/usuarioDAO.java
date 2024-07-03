@@ -74,10 +74,10 @@ public class usuarioDAO {
 
   
   public void delete2 (Usuario usuario) {
-        String sql = "DELETE FROM usuario WHERE email_usuario=? and senha_usuario=?";
+        String sql = "DELETE FROM usuario WHERE Cpf_usuario=?";
         try (Connection c = ConexaoDB.obtemConexao(); PreparedStatement ps = c.prepareStatement(sql)) {
-            ps.setString(1, usuario.getEmail_usuario());
-            ps.setString(2, usuario.getSenha_usuario());
+            ps.setString(1, usuario.getCpf_usuario());
+            //ps.setString(2, usuario.getSenha_usuario());
             ps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Exclusão realizada com sucesso");
         } catch (SQLException e) {
