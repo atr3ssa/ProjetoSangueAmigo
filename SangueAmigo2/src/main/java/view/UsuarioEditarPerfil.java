@@ -356,7 +356,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         //pegando o que foi digitado no Nome do formulario e atualizando
         //padrão mvc
         if(evt.getSource()==B14Update){
-			if ((usuario.getCpf_usuario() == "" )||{
+			if (usuario.getCpf_usuario() == "" ){
                             JOptionPane.showMessageDialog(null, "Primeiro consulte o Usuário");
                         }
                         else
