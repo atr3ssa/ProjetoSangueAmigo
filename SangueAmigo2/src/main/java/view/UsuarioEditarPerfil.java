@@ -52,7 +52,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         tx17 = new javax.swing.JTextField();
         tx19 = new javax.swing.JTextField();
         B14Update = new javax.swing.JButton();
-        B14 = new javax.swing.JButton();
+        B14Excluir = new javax.swing.JButton();
         tx22 = new javax.swing.JPasswordField();
         jPanel2 = new javax.swing.JPanel();
         B15 = new javax.swing.JButton();
@@ -115,14 +115,14 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
             }
         });
 
-        B14.setBackground(new java.awt.Color(153, 0, 0));
-        B14.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        B14.setForeground(new java.awt.Color(255, 255, 255));
-        B14.setText("Excluir");
-        B14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        B14.addActionListener(new java.awt.event.ActionListener() {
+        B14Excluir.setBackground(new java.awt.Color(153, 0, 0));
+        B14Excluir.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        B14Excluir.setForeground(new java.awt.Color(255, 255, 255));
+        B14Excluir.setText("Excluir");
+        B14Excluir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        B14Excluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B14jButton5ActionPerformed(evt);
+                B14ExcluirjButton5ActionPerformed(evt);
             }
         });
 
@@ -233,7 +233,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(B14Update, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(B14, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(B14Excluir, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(31, 31, 31))
                     .addGroup(JQuadroVermelho2Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
@@ -307,7 +307,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
                 .addGroup(JQuadroVermelho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(B14Update, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(B16, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(B14, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(B14Excluir, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -394,28 +394,37 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_B15ActionPerformed
 
-    private void B14jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B14jButton5ActionPerformed
+    private void B14ExcluirjButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B14ExcluirjButton5ActionPerformed
         // TODO add your handling code here:
-        
-        usuario.setCpf_usuario (tx16.getText());
-        //usuario.setSenha_usuario(tx22.getText());
-        
-       
+        if(evt.getSource()==B14Excluir)
+			{
+			if (usuario.getCpf_usuario() == "") {
+                            JOptionPane.showMessageDialog(null, "Primeiro consulte o Usuário");
+                        }
+                        
+                        else
+                        {
+                                usuario.setCpf_usuario (tx16.getText());
+                                //usuario.setSenha_usuario(tx22.getText());
 
-        usuarioBD = new usuarioDAO();
-        usuarioBD.delete2(usuario);
 
-        // limpar campos
-        tx17.setText("");
-        tx18.setText("");
-        tx19.setText("");
-        tx20.setText("");
-        tx21.setText("");
-        tx22.setText("");
-        
-        new UsuarioHome().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_B14jButton5ActionPerformed
+
+                                usuarioBD = new usuarioDAO();
+                                usuarioBD.delete2(usuario);
+
+                                // limpar campos
+                                tx17.setText("");
+                                tx18.setText("");
+                                tx19.setText("");
+                                tx20.setText("");
+                                tx21.setText("");
+                                tx22.setText("");
+
+                                new UsuarioHome().setVisible(true);
+                                dispose();
+                        }
+                        }
+    }//GEN-LAST:event_B14ExcluirjButton5ActionPerformed
 
     private void tx16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx16ActionPerformed
         // TODO add your handling code here:
@@ -508,7 +517,7 @@ public class UsuarioEditarPerfil extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton B14;
+    private javax.swing.JButton B14Excluir;
     private javax.swing.JButton B14Update;
     private javax.swing.JButton B15;
     private javax.swing.JButton B16;

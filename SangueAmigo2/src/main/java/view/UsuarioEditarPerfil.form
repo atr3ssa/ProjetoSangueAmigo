@@ -89,7 +89,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="B14Update" min="-2" pref="133" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="B14" min="-2" pref="146" max="-2" attributes="0"/>
+                              <Component id="B14Excluir" min="-2" pref="146" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -181,7 +181,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="B14Update" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                           <Component id="B16" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="B14" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="B14Excluir" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
@@ -268,7 +268,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="B14UpdatejButton5ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="B14">
+            <Component class="javax.swing.JButton" name="B14Excluir">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="99" type="rgb"/>
@@ -289,7 +289,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="B14jButton5ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="B14ExcluirjButton5ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JPasswordField" name="tx22">
