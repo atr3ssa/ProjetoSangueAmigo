@@ -94,7 +94,7 @@ public class UsuarioHome extends javax.swing.JFrame {
         B7Update.setBackground(new java.awt.Color(153, 0, 0));
         B7Update.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         B7Update.setForeground(new java.awt.Color(255, 255, 255));
-        B7Update.setText("Consultar Perfil");
+        B7Update.setText(" Perfil");
         B7Update.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         B7Update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
